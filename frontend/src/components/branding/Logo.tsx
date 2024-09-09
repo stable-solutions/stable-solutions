@@ -5,8 +5,8 @@ import { LogoTextHeader } from './LogoText';
 const Logo = () => {
     const [textIndex, setTextIndex] = useState(0);
     const texts = [
-        'Stable Solution',
-        'Stable Solution'
+        'Stable Solutions',
+        'Stable Solutions'
     ];
     const displayTimes = [5000, 3000];
 
@@ -31,7 +31,7 @@ const Logo = () => {
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.5 }}
                 >
-                    {texts[textIndex] === 'Stable Solution' ? (
+                    {texts[textIndex] === 'Stable Solutions' ? (
                         <LogoTextHeader />
                     ) : (
                         texts[textIndex]

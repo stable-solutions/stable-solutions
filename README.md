@@ -1,4 +1,4 @@
-# stable solution
+# stable solutions
 
 
 # Start

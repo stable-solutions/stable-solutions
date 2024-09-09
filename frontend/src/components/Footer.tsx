@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-                    <p>&copy; {new Date().getFullYear()} Stable Solution. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Stable Solutions. All rights reserved.</p>
                 </div>
             </div>
         </footer>
