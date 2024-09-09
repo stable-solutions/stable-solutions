@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
     return (
         <>
             <button
-                className="flex items-center space-x-1 text-white hover:text-gray-800"
+                className="flex items-center space-x-1 text-dark-blue hover:text-olive-green"
                 onClick={() => setIsOpen(true)}
             >
                 <Globe size={20} />

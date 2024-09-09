@@ -7,7 +7,7 @@ import './i18n';
 
 import HomePage from './pages/LandingPage.tsx';
 import ErrorPage from './pages/commonPages/ErrorPage.tsx';
-import PravicyPolicyPage from './pages/commonPages/PravicyPolicyPage.tsx';
+import PravicyPolicyPage from './pages/commonPages/PrivacyPolicyPage.tsx';
 import TermsOfServicePage from './pages/commonPages/TermsOfServicePage.tsx';
 import CookiePolicyPage from './pages/commonPages/CookiePolicyPage.tsx'
 import AboutUsPage from './pages/commonPages/AboutUsPage.tsx'

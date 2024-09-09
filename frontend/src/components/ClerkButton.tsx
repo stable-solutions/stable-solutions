@@ -10,7 +10,7 @@ export const ClerkButton = () => {
     <div className="flex items-center justify-center p-2">
       <SignedOut>
         <SignInButton mode="modal">
-          <button className="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-black font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          <button className="flex items-center justify-center gap-2 bg-pale-blue hover:bg-gray-100 text-black font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
             <LogIn size={20} />
             <span className="sm:inline">{t('app.signin')}</span>
           </button>

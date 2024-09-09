@@ -34,17 +34,17 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, navItems, toggleMenu })
       className={`md:flex md:items-center md:space-x-4 transition-all duration-300 ease-in-out 
                   ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:opacity-100'} 
                   md:max-h-screen md:relative absolute top-full left-0 w-full md:w-auto 
-                  overflow-hidden z-50 bg-white`} // Added bg-white class here
+                  overflow-hidden z-50 bg-pale-blue`} // Updated with pale blue background
     >
-      <div className="md:bg-none bg-white">
+      <div className="md:bg-none bg-pale-blue">  {/* Background color for small screen */}
         <div className="flex flex-col md:flex-row items-start md:items-center py-2 px-4 md:p-0">
           {navItems.map((item, index) => (
             <a
               key={index}
               href={item.href}
               onClick={handleNavigation(item.href)}
-              className={`block py-2 px-4 text-black text-base md:text-lg hover:bg-black hover:bg-opacity-10 rounded transition-all duration-300 ease-in-out
-                          ${item.isContact ? 'bg-green-500 text-white rounded-full' : ''}`} // Increased py and px values
+              className={`block py-2 px-4 text-dark-blue text-base md:text-lg hover:bg-dark-blue hover:bg-opacity-10 rounded transition-all duration-300 ease-in-out
+                          ${item.isContact ? 'bg-olive-green text-dark-blue rounded-full' : ''}`} // Contact button gets olive green background
             >
               {t(item.label)}
             </a>
@@ -72,7 +72,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`relative z-50 shadow-lg ${isMenuOpen ? 'bg-white' : 'bg-transparent'} md:bg-transparent`}>
+    <header className={`relative z-50 shadow-lg ${isMenuOpen ? 'bg-pale-blue' : 'bg-transparent'} md:bg-transparent`}>
       <style>{`
         @keyframes slowPulse {
           50%, 100% {
@@ -89,14 +89,14 @@ const Header = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between py-1.5 px-4 md:py-2.5 md:px-10 relative">
         <div className="flex items-center justify-between w-full md:w-auto">
           <div onClick={handleLogoClick} className="cursor-pointer">
-            <Logo />
+            <Logo /> {/* Logo retains current design */}
           </div>
           <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none p-1.5 rounded-full transition-all duration-300 bg-black bg-opacity-10 hover:bg-opacity-20"
+              className="focus:outline-none p-1.5 rounded-full transition-all duration-300 bg-dark-blue bg-opacity-10 hover:bg-opacity-20"
             >
-              {isMenuOpen ? <X size={20} className="text-black" /> : <Menu size={20} className="text-black" />}
+              {isMenuOpen ? <X size={20} className="text-dark-blue" /> : <Menu size={20} className="text-dark-blue" />}
             </button>
           </div>
         </div>

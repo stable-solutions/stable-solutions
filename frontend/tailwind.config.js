@@ -6,11 +6,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],  // Poppins as main font
+        roboto: ['Roboto', 'sans-serif'],    // Roboto as subtext font
+      },
       colors: {
-        'navy-blue': '#5603fc', // You can adjust this hex code to your preferred shade of navy blue
+        'dark-blue': '#1d3b79',     // Dark Blue
+        'olive-green': '#a7c500',   // Olive Green
+        'purple': '#87289a',        // Purple
+        'pale-blue': '#ecf9ff',     // Pale Blue
+        'off-white': '#fdf5ea',     // Off-white / Beige
+        'pale-brown': '#736b53',    // Pale Brown
       },
     },
   },
   plugins: [],
 }
-

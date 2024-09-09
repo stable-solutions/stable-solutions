@@ -11,7 +11,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      <div className="relative h-[60vh] flex flex-col items-center justify-center bg-gradient-to-b from-blue-100 to-blue-200 p-8 text-center overflow-hidden">
+      <div className="relative h-[60vh] flex flex-col items-center justify-center bg-pale-blue p-8 text-center overflow-hidden">
         <motion.div
           className="absolute inset-0 w-full h-full"
           initial={{ y: 0 }}

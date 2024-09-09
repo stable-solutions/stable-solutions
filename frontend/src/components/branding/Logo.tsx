@@ -21,11 +21,11 @@ const Logo = () => {
     }, [textIndex]);
 
     return (
-        <div className="text-3xl font-extrabold font-nunito">
+        <div className="text-3xl font-extrabold font-poppins">
             <AnimatePresence mode="wait">
                 <motion.span
                     key={textIndex}
-                    className="bg-gradient-to-r from-purple-400 to-pink-300 text-transparent bg-clip-text drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]"
+                    className="bg-pale-blue text-transparent bg-clip-text drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
