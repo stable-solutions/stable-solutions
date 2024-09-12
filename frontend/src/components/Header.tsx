@@ -8,7 +8,7 @@ import Logo from './branding/Logo';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
-  { label: 'header.home', href: '/home' },
+  { label: 'header.home', href: '/' },
   { label: 'header.about', href: '/about-us' },
   { label: 'header.contact', href: '/contact-us', isContact: true },
 ];
