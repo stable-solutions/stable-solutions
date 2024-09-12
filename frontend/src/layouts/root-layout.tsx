@@ -16,10 +16,12 @@ export default function RootLayout() {
             routerReplace={(to) => navigate(to, { replace: true })}
             publishableKey={PUBLISHABLE_KEY}
         >
-            <Header />
-            <main>
-                <Outlet />
-            </main>
+            <div className="flex flex-col min-h-screen">
+                <Header/>
+                <main className="flex-grow mt-[64px]"> {/* Adjust this value based on your header height */}
+                    <Outlet />
+                </main>
+            </div>
         </ClerkProvider>
     )
 }
