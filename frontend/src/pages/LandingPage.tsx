@@ -3,7 +3,27 @@ import { motion } from 'framer-motion';
 import Footer from "../components/Footer";
 import { LogoText } from "../components/branding/LogoText";
 import { useTranslation } from 'react-i18next';
-import FeatureSection from '../components/landingPage/FeatureSection';
+import DottedFeatureSection from '../components/landingPage/DottedFeatureSection';
+
+interface PlainFeatureItemProps {
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  description: string;
+}
+const PlainFeatureItem: React.FC<PlainFeatureItemProps> = ({ imgSrc, imgAlt, title, description }) => (
+  <div className="flex items-start">
+    <img src={imgSrc} alt={imgAlt} className="mr-4" />
+    <div>
+      <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-2 text-gray-800">
+        {title}
+      </h2>
+      <p className="text-base md:text-lg lg:text-lg text-gray-600">
+        {description}
+      </p>
+    </div>
+  </div>
+);
 
 
 export default function HomePage() {
@@ -63,7 +83,6 @@ export default function HomePage() {
           Let's Talk
         </motion.button>
       </div>
-
       <div className="bg-[#fffbeb] py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="w-full sm:w-3/4">
@@ -75,50 +94,30 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start">
-              <img src="https://placehold.co/64x64" alt="AI tools icon" className="mr-4" />
-              <div>
-                <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-2 text-gray-800">
-                  Custom AI Tools
-                </h2>
-                <p className="text-base md:text-lg lg:text-lg text-gray-600">
-                  Unlock the potential of artificial intelligence tailored specifically for your business needs. Together we can find focus on success to ensure your life easier.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <img src="https://placehold.co/64x64" alt="Creative design icon" className="mr-4" />
-              <div>
-                <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-2 text-gray-800">
-                  Creative Design
-                </h2>
-                <p className="text-base md:text-lg lg:text-lg text-gray-600">
-                  Our team can help you bring big aesthetics with the technology, delivering stunning websites and engaging apps like you’ve never seen before.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <img src="https://placehold.co/64x64" alt="Digital full service icon" className="mr-4" />
-              <div>
-                <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-2 text-gray-800">
-                  Digital Full Service
-                </h2>
-                <p className="text-base md:text-lg lg:text-lg text-gray-600">
-                  Turn your vision into reality! From setting up your digital presence to managing your online reputation, we’ve got you covered.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <img src="https://placehold.co/64x64" alt="Relationship forward icon" className="mr-4" />
-              <div>
-                <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-2 text-gray-800">
-                  Relationship Forward
-                </h2>
-                <p className="text-base md:text-lg lg:text-lg text-gray-600">
-                  Strong relationships are the foundation of success. We prioritize building lasting connections with our clients to ensure that their long-term goals are met.
-                </p>
-              </div>
-            </div>
+            <PlainFeatureItem
+              imgSrc="https://placehold.co/64x64"
+              imgAlt="AI tools icon"
+              title="Custom AI Tools"
+              description="Unlock the potential of artificial intelligence tailored specifically for your business needs. Together we can find focus on success to ensure your life easier."
+            />
+            <PlainFeatureItem
+              imgSrc="https://placehold.co/64x64"
+              imgAlt="Creative design icon"
+              title="Creative Design"
+              description="Our team can help you bring big aesthetics with the technology, delivering stunning websites and engaging apps like you’ve never seen before."
+            />
+            <PlainFeatureItem
+              imgSrc="https://placehold.co/64x64"
+              imgAlt="Digital full service icon"
+              title="Digital Full Service"
+              description="Turn your vision into reality! From setting up your digital presence to managing your online reputation, we’ve got you covered."
+            />
+            <PlainFeatureItem
+              imgSrc="https://placehold.co/64x64"
+              imgAlt="Relationship forward icon"
+              title="Relationship Forward"
+              description="Strong relationships are the foundation of success. We prioritize building lasting connections with our clients to ensure that their long-term goals are met."
+            />
           </div>
         </div>
       </div>
@@ -138,7 +137,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <FeatureSection />
+          <DottedFeatureSection />
 
 
         </div>
