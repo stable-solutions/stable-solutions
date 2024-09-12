@@ -11,7 +11,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      <div className="relative h-[60vh] flex flex-col items-center justify-center bg-pale-blue p-8 text-center overflow-hidden">
+      <div className="relative h-[70vh] pt-32 pb-32 flex flex-col items-center justify-center bg-pale-blue p-4 sm:p-8 text-center overflow-hidden">
         <motion.div
           className="absolute inset-0 w-full h-full"
           initial={{ y: 0 }}
@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center">
           <div className="flex flex-col items-center md:items-start">
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-gray-800 leading-tight whitespace-nowrap"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -30,7 +30,7 @@ export default function HomePage() {
               {t('landingpage.section1.line1')}
             </motion.h1>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -38,7 +38,7 @@ export default function HomePage() {
               {t('landingpage.section1.line2')}
             </motion.h1>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -49,14 +49,14 @@ export default function HomePage() {
           <motion.img
             src="https://placehold.co/300x300"
             alt="Your Image"
-            className="w-full h-auto rounded-lg shadow-lg mt-8 md:mt-0 md:ml-8"
+            className="w-full max-w-[300px] h-auto rounded-lg shadow-lg mt-8 md:mt-0 md:ml-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           />
         </div>
         <motion.button
-          className="px-8 py-3 bg-green-800 text-white rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-8"
+          className="px-8 py-3 bg-green-800 text-white rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-8 max-w-xs w-full sm:w-auto"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -64,13 +64,13 @@ export default function HomePage() {
         </motion.button>
       </div>
 
-      <div className="bg-[#fffbeb] py-16">
+      <div className="bg-[#fffbeb] py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="w-3/4">
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
+          <div className="w-full sm:w-3/4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
               The one stop shop for all your digital professional needs
             </h1>
-            <p className="text-lg md:text-xl lg:text-xl font-medium mb-8 text-gray-600">
+            <p className="text-lg md:text-xl font-medium mb-8 text-gray-600">
               Transforming your business's digital capacities and online presence to reflect how awesome you are! Meaningful results is our top priority at Stable Solutions.
             </p>
           </div>
@@ -127,17 +127,17 @@ export default function HomePage() {
       <div className="w-full h-10 bg-green-700"></div>
 
 
-      <div className="bg-[#fffbeb] py-16">
+      <div className="bg-[#fffbeb] py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="w-3/4">
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
+          <div className="w-full sm:w-3/4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
               Capabilities
             </h1>
             <p className="text-lg md:text-xl lg:text-xl font-medium mb-8 text-gray-600">
               Cutting-Edge Technologies, Tailor-Made Solutions Services By <LogoText />
             </p>
           </div>
-          
+
           <FeatureSection />
 
 

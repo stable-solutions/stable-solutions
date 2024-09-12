@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-2xl fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-5 lg:px-7">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div onClick={handleLogoClick} className="cursor-pointer">

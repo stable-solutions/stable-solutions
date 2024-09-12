@@ -17,8 +17,8 @@ export default function RootLayout() {
             publishableKey={PUBLISHABLE_KEY}
         >
             <div className="flex flex-col min-h-screen">
-                <Header/>
-                <main className="flex-grow mt-[64px]"> {/* Adjust this value based on your header height */}
+                <Header />
+                <main className="flex-grow pt-16 md:pt-0">
                     <Outlet />
                 </main>
             </div>
