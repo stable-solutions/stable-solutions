@@ -46,8 +46,8 @@ const Header = () => {
                 key={index}
                 href={item.href}
                 onClick={handleNavigation(item.href)}
-                className={`text-dark-blue hover:text-olive-green px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200
-                  ${item.isContact ? 'bg-olive-green text-white hover:bg-olive-green-dark rounded-full' : ''}`}
+                className={`text-dark-blue hover:text-olive-green px-3 py-2 rounded-md text-lg font-poppins font-medium transition-colors duration-200
+                  ${item.isContact ? 'bg-olive-green text-dark-blue hover:text-dark-blue rounded-full' : ''}`}
               >
                 {t(item.label)}
               </a>
@@ -81,7 +81,7 @@ const Header = () => {
                   href={item.href}
                   onClick={handleNavigation(item.href)}
                   className={`block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50
-                    ${item.isContact ? 'bg-olive-green text-white hover:bg-olive-green-dark rounded-full' : ''}`}
+                    ${item.isContact ? 'bg-olive-green text-dark-blue hover:bg-olive-green-dark rounded-full' : ''}`}
                 >
                   {t(item.label)}
                 </a>

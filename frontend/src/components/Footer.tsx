@@ -17,7 +17,7 @@ const navigation = {
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gray-100 text-gray-600 py-8">
+        <footer className="bg-purple text-white py-8">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="mb-8 md:mb-0">

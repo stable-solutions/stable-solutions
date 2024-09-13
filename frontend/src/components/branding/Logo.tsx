@@ -1,43 +1,17 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { LogoTextHeader } from './LogoText';
 
 const Logo = () => {
-    const [textIndex, setTextIndex] = useState(0);
-    const texts = [
-        'Stable Solutions',
-        'Stable Solutions'
-    ];
-    const displayTimes = [5000, 3000];
-
-    useEffect(() => {
-        const cycleText = () => {
-            setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        };
-
-        const timer = setTimeout(cycleText, displayTimes[textIndex]);
-
-        return () => clearTimeout(timer);
-    }, [textIndex]);
-
     return (
         <div className="text-3xl font-extrabold font-poppins">
-            <AnimatePresence mode="wait">
-                <motion.span
-                    key={textIndex}
-                    className="bg-pale-blue text-transparent bg-clip-text drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    {texts[textIndex] === 'Stable Solutions' ? (
-                        <LogoTextHeader />
-                    ) : (
-                        texts[textIndex]
-                    )}
-                </motion.span>
-            </AnimatePresence>
+            <motion.span
+                className="bg-pale-blue text-transparent bg-clip-text font-poppins font-semibold text-dark-blue"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+            >
+                <LogoTextHeader />
+            </motion.span>
         </div>
     );
 };

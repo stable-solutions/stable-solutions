@@ -34,6 +34,8 @@ export default function HomePage() {
 
 // we'll need to put the Let's Talk button in the same flexbox with the  left text and also make sure
 // the bottom of the hero section wraps a little tigther
+
+//when we scroll all the way up or all the way down it shouldnt be white
   return (
     <div className="flex flex-col">
       <div className="relative h-[70vh] pt-32 pb-32 flex flex-col items-center justify-center bg-pale-blue p-4 sm:p-8 text-center overflow-hidden">
@@ -47,7 +49,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center">
           <div className="flex flex-col items-center md:items-start">
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-poppins font-extrabold mb-4 text-dark-blue leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -55,7 +57,7 @@ export default function HomePage() {
               {t('landingpage.section1.line1')}
             </motion.h1>
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-poppins font-extrabold mb-4 text-dark-blue leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -63,7 +65,7 @@ export default function HomePage() {
               {t('landingpage.section1.line2')}
             </motion.h1>
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-poppins font-extrabold mb-4 text-dark-blue leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -81,18 +83,19 @@ export default function HomePage() {
           />
         </div>
         <motion.button
-          className="px-8 py-3 bg-olive-green text-white rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-8 max-w-xs w-full sm:w-auto"
+          className="px-8 py-3 bg-olive-green text-dark-blue rounded-full text-lg font-poppins font-semibold transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 mt-8 max-w-xs w-full sm:w-auto"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Let's Talk
+          Let's Talk! 
         </motion.button>
       </div>
       <div className="bg-off-white py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="w-full sm:w-3/4">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
-              The one stop shop for all your digital professional needs
+           
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-extrabold mb-4 text-dark-blue leading-tight">
+              The <em>one stop shop</em> for all your digital professional needs
             </h1>
             <p className="text-lg md:text-xl font-medium mb-8 text-gray-600">
               Transforming your business's digital capacities and online presence to reflect how awesome you are! Meaningful results is our top priority at Stable Solutions.
