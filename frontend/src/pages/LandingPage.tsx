@@ -29,6 +29,11 @@ const PlainFeatureItem: React.FC<PlainFeatureItemProps> = ({ imgSrc, imgAlt, tit
 export default function HomePage() {
   const { t } = useTranslation();
 
+
+//going to need to refactor this code and break them up into a few more files
+
+// we'll need to put the Let's Talk button in the same flexbox with the  left text and also make sure
+// the bottom of the hero section wraps a little tigther
   return (
     <div className="flex flex-col">
       <div className="relative h-[70vh] pt-32 pb-32 flex flex-col items-center justify-center bg-pale-blue p-4 sm:p-8 text-center overflow-hidden">
@@ -67,23 +72,23 @@ export default function HomePage() {
             </motion.h1>
           </div>
           <motion.img
-            src="https://placehold.co/300x300"
-            alt="Your Image"
-            className="w-full max-w-[300px] h-auto rounded-lg shadow-lg mt-8 md:mt-0 md:ml-8"
+            src="/assets/hero-section/rocket-hero.svg"
+            alt="rocket-hero"
+            className="w-full max-w-[300px] h-auto rounded-lg mt-8 md:mt-0 md:ml-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           />
         </div>
         <motion.button
-          className="px-8 py-3 bg-green-800 text-white rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-8 max-w-xs w-full sm:w-auto"
+          className="px-8 py-3 bg-olive-green text-white rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-8 max-w-xs w-full sm:w-auto"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Let's Talk
         </motion.button>
       </div>
-      <div className="bg-[#fffbeb] py-16 px-4 sm:px-8">
+      <div className="bg-off-white py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="w-full sm:w-3/4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
@@ -123,10 +128,10 @@ export default function HomePage() {
       </div>
 
 
-      <div className="w-full h-10 bg-green-700"></div>
+      <div className="w-full h-60 bg-olive-green"></div>
 
 
-      <div className="bg-[#fffbeb] py-16 px-4 sm:px-8">
+      <div className="bg-off-white py-16 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="w-full sm:w-3/4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
