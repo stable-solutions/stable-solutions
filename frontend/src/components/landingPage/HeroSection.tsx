@@ -1,10 +1,10 @@
 import React from 'react';
 
 const HeroSection: React.FC = () => (
-    <div className="relative" style={{ transform: 'scale(0.75)', transformOrigin: 'top center' }}>
+    <div className="relative">
         <div className="relative h-[90vh] pt-40 pb-32 flex flex-col items-start justify-center bg-pale-blue text-left overflow-hidden px-10">
             {/* Container for the content */}
-            <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between w-full">
+            <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between w-full md:scale-75">
                 
                 {/* Text Section */}
                 <div className="flex flex-col items-start w-full md:w-1/2 space-y-4">

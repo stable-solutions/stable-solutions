@@ -1,8 +1,8 @@
 import React from 'react';
 
 const FeaturesSection: React.FC = () => (
-  <div className="bg-off-white py-16 px-4 sm:px-8" style={{ transform: 'scale(0.75)', transformOrigin: 'top center' }}>
-    <div className="max-w-6xl mx-auto">
+  <div className="bg-off-white py-16 px-4 sm:px-8">
+    <div className="max-w-6xl mx-auto md:scale-75">
       {/* Main Heading */}
       <div className="w-full md:w-3/5">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-poppins font-bold mb-4 text-dark-blue leading-tight">
