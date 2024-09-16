@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => (
                 </p>
                 <div className="w-full flex justify-center"> {/* Centering button */}
                     <button
-                        className="px-12 py-4 bg-olive-green text-white rounded-full text-lg md:text-xl font-poppins font-semibold transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 mt-8"  // Increased button text size
+                        className="px-12 py-4 bg-olive-green text-white rounded-full text-lg md:text-xl font-poppins font-semibold mt-8"  // Removed scaling and shadow animations
                     >
                         Let's Talk!
                     </button>
