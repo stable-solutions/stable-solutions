@@ -30,20 +30,20 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent fixed top-0 left-0 right-0 z-50" style={{ transform: 'scale(0.75)', transformOrigin: 'center' }}>
-      <div className="container mx-auto px-4 sm:px-5 lg:px-7">
+    <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-6 sm:px-10 lg:px-12">
         <div className="flex justify-between items-center py-4">
           
-          {/* Logo Section */}
-          <div className="flex items-center">
+          {/* Left-aligned Logo Section */}
+          <div className="flex items-center space-x-2"> {/* Adjusted spacing */}
             <div onClick={handleLogoClick} className="cursor-pointer flex items-center">
-              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-10 mr-2" />
-              <span className="text-2xl sm:text-3xl font-bold text-dark-blue font-poppins font-extrabold">Stable Solutions</span>
+              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-10" />
+              <span className="text-2xl sm:text-3xl font-bold text-dark-blue font-poppins font-extrabold ml-2">Stable Solutions</span>
             </div>
           </div>
 
-          {/* Navigation Items */}
-          <nav className="hidden md:flex flex-grow justify-center space-x-6 items-center">
+          {/* Centered Navigation Items */}
+          <nav className="hidden md:flex justify-center space-x-6 items-center">
             {navItems.map((item, index) => (
               <a
                 key={index}
@@ -59,9 +59,9 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* Contact Us Button */}
+          {/* Right-aligned Contact Us Button */}
           <div className="hidden md:block">
-            <button className="px-8 py-3 bg-olive-green text-white rounded-full text-lg font-poppins font-bold" style={{ width: '200px' }}>
+            <button className="px-8 py-3 bg-olive-green text-white rounded-full text-lg font-poppins font-bold" style={{ marginRight: '20px' }}>
               Contact Us
             </button>
           </div>
