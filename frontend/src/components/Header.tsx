@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useUser } from '@clerk/clerk-react';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
-
-// Add the import for your logo here
 import LogoImage from '/assets/logos/logo-colored-official.svg'; 
 
 const navItems = [
@@ -46,12 +44,20 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Menu & Contact Us button */}
-          <div className="md:hidden flex justify-between items-center w-full">
-            {/* Contact Us button for mobile */}
-            <button className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto" style={{ flexBasis: '70%' }}>
+          {/* Mobile Menu: Contact Us, LanguageSwitcher, and Burger Menu */}
+          <div className="md:hidden flex items-center justify-between w-full">
+            {/* Contact Us button for mobile, slightly reduced width */}
+            <button 
+              className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto" 
+              style={{ flexBasis: '65%' }}  // Slightly reduced width to make space
+            >
               Contact Us
             </button>
+
+            {/* LanguageSwitcher for mobile */}
+            <div className="flex-shrink-0 mx-2 mr-4"> {/* Added more right margin */}
+              <LanguageSwitcher />
+            </div>
 
             {/* Mobile Menu Toggle stays on the right */}
             <button onClick={toggleMenu} className="text-gray-700 hover:text-gray-900 focus:outline-none">
