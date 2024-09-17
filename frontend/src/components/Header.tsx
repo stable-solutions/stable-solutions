@@ -30,8 +30,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto px-6 sm:px-10 lg:px-12">
+    <header className="bg-transparent fixed top-0 left-0 right-0 z-50 scale-75">
+      <div className="container mx-auto px-4 sm:px-5 lg:px-7">
         <div className="flex justify-between items-center py-4">
           
           {/* Left-aligned Logo Section */}
