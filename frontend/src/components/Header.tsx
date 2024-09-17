@@ -30,47 +30,57 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent fixed top-0 left-0 right-0 z-50 scale-75">
+    <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 sm:px-5 lg:px-7">
         <div className="flex justify-between items-center py-4">
-          
-          {/* Left-aligned Logo Section */}
-          <div className="flex items-center space-x-2"> {/* Adjusted spacing */}
+
+          {/* Logo Section for both desktop and mobile */}
+          <div className="flex items-center space-x-2">
             <div onClick={handleLogoClick} className="cursor-pointer flex items-center">
-              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-10" />
-              <span className="text-2xl sm:text-3xl font-bold text-dark-blue font-poppins font-extrabold ml-2">Stable Solutions</span>
+              {/* Adjust logo size for mobile */}
+              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-7" /> 
+              {/* Logo text only visible on desktop (md and above) */}
+              <span className="hidden md:block text-xl sm:text-2xl font-bold text-dark-blue font-poppins font-extrabold ml-2">
+                Stable Solutions
+              </span>
             </div>
           </div>
 
-          {/* Centered Navigation Items */}
+          {/* Mobile Menu & Contact Us button */}
+          <div className="md:hidden flex justify-between items-center w-full">
+            {/* Contact Us button for mobile */}
+            <button className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto" style={{ flexBasis: '70%' }}>
+              Contact Us
+            </button>
+
+            {/* Mobile Menu Toggle stays on the right */}
+            <button onClick={toggleMenu} className="text-gray-700 hover:text-gray-900 focus:outline-none">
+              <span className="sr-only">Open main menu</span>
+              {isMenuOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
+
+          {/* Centered Navigation Items for desktop */}
           <nav className="hidden md:flex justify-center space-x-6 items-center">
             {navItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
                 onClick={handleNavigation(item.href)}
-                className="text-dark-blue hover:text-olive-green px-3 py-2 rounded-md text-lg font-poppins font-bold"
+                className="text-dark-blue hover:text-olive-green px-2 py-1 rounded-md text-base font-poppins font-bold"
               >
                 {item.label}
               </a>
             ))}
-            <div className="text-sm">
+            <div className="text-xs">
               <LanguageSwitcher />
             </div>
           </nav>
 
-          {/* Right-aligned Contact Us Button */}
+          {/* Right-aligned Contact Us Button for desktop */}
           <div className="hidden md:block">
-            <button className="px-8 py-3 bg-olive-green text-white rounded-full text-lg font-poppins font-bold" style={{ marginRight: '20px' }}>
+            <button className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold" style={{ marginRight: '20px', width: '160px' }}>
               Contact Us
-            </button>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-gray-700 hover:text-gray-900 focus:outline-none">
-              <span className="sr-only">Open main menu</span>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
@@ -84,13 +94,13 @@ const Header = () => {
               <a
                 key={index}
                 href={item.href}
+                className="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 font-poppins"
                 onClick={handleNavigation(item.href)}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 font-poppins"
               >
                 {item.label}
               </a>
             ))}
-            <div className="mt-4">
+            <div className="mt-4 text-xs">
               <LanguageSwitcher />
             </div>
           </div>
