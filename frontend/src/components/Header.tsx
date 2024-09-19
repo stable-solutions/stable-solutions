@@ -3,11 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { useUser } from '@clerk/clerk-react';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
-import LogoImage from '/assets/logos/logo-colored-official.svg'; 
+import LogoImage from '/assets/logos/logo-colored-official.svg';
 
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about-us' },
+  { label: 'Cost Estimator', href: '/cost-estimator' }
 ];
 
 const Header = () => {
@@ -36,7 +37,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div onClick={handleLogoClick} className="cursor-pointer flex items-center">
               {/* Adjust logo size for mobile */}
-              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-7" /> 
+              <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-7" />
               {/* Logo text only visible on desktop (md and above) */}
               <span className="hidden md:block text-xl sm:text-2xl font-bold text-dark-blue font-poppins font-extrabold ml-2">
                 Stable Solutions
@@ -47,8 +48,9 @@ const Header = () => {
           {/* Mobile Menu: Contact Us, LanguageSwitcher, and Burger Menu */}
           <div className="md:hidden flex items-center justify-between w-full">
             {/* Contact Us button for mobile, slightly reduced width */}
-            <button 
-              className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto" 
+            <button
+              onClick={handleNavigation('/contact-us')}
+              className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto"
               style={{ flexBasis: '65%' }}  // Slightly reduced width to make space
             >
               Contact Us
@@ -85,7 +87,9 @@ const Header = () => {
 
           {/* Right-aligned Contact Us Button for desktop */}
           <div className="hidden md:block">
-            <button className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold" style={{ marginRight: '20px', width: '160px' }}>
+            <button
+              onClick={handleNavigation('/contact-us')}
+              className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold" style={{ marginRight: '20px', width: '160px' }}>
               Contact Us
             </button>
           </div>

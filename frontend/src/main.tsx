@@ -13,6 +13,7 @@ import CookiePolicyPage from './pages/commonPages/CookiePolicyPage.tsx'
 import AboutUsPage from './pages/commonPages/AboutUsPage.tsx'
 import ContactUsPage from './pages/commonPages/ContactUsPage.tsx'
 import CareersPage from './pages/commonPages/CareersPage.tsx'
+import CostEstimator from "./pages/CostEstimatorPage.tsx"
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/about-us", element: <AboutUsPage /> },
       { path: "/contact-us", element: <ContactUsPage /> },
       { path: "/careers", element: <CareersPage /> },
+      { path: "/cost-estimator", element: <CostEstimator /> }
     ]
   }
 ])
