@@ -17,41 +17,41 @@ const FeaturesSection: React.FC = () => (
       {/* Grid Layout for Services */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="flex items-start space-x-4">
-          <img src="/assets/features-section/AI-features.svg" alt="AI tools icon" className="w-16 h-16" />
+          <img src="/assets/landingpage/features-section/AI-features.svg" alt="AI tools icon" className="w-16 h-16" />
           <div>
             <h2 className="text-2xl md:text-3xl font-poppins font-bold text-dark-blue mb-2">Custom AI Tools</h2>
             <p className="text-lg font-roboto text-dark-blue leading-normal">
-              Unlock the potential of artificial intelligence tailored specifically to your business needs.
+            Unlock the potential of artificial intelligence tailored specifically to your business needs. Together we can find how we can use AI to make your life easier.
             </p>
           </div>
         </div>
 
         <div className="flex items-start space-x-4">
-          <img src="/assets/features-section/design-features.svg" alt="Creative design icon" className="w-16 h-16" />
+          <img src="/assets/landingpage/features-section/design-features.svg" alt="Creative design icon" className="w-16 h-16" />
           <div>
             <h2 className="text-2xl md:text-3xl font-poppins font-bold text-dark-blue mb-2">Creative Design</h2>
             <p className="text-lg font-roboto text-dark-blue leading-normal">
-              Our team can help you blend the aesthetic with the technology, delivering stunning websites and engaging apps!
+            Our team can help you blend the aesthetic with the technology, delivering stunning websites and engaging apps! See your brand like never before. 
             </p>
           </div>
         </div>
 
         <div className="flex items-start space-x-4">
-          <img src="/assets/features-section/fullservice-features.svg" alt="Digital full service icon" className="w-16 h-16" />
+          <img src="/assets/landingpage/features-section/fullservice-features.svg" alt="Digital full service icon" className="w-16 h-16" />
           <div>
             <h2 className="text-2xl md:text-3xl font-poppins font-bold text-dark-blue mb-2">Digital Full Service</h2>
             <p className="text-lg font-roboto text-dark-blue leading-normal">
-              Turn your visions into reality! From setting up your domain and business email, to design and development of your website or app, we do it all.
+            Turn your visions into reality! From setting up your domain and business email, to design and development of your website or app, we do it all.  
             </p>
           </div>
         </div>
 
         <div className="flex items-start space-x-4">
-          <img src="/assets/features-section/relationships-features.svg" alt="Relationship forward icon" className="w-16 h-16" />
+          <img src="/assets/landingpage/features-section/relationships-features.svg" alt="Relationship forward icon" className="w-16 h-16" />
           <div>
             <h2 className="text-2xl md:text-3xl font-poppins font-bold text-dark-blue mb-2">Relationship Forward</h2>
             <p className="text-lg font-roboto text-dark-blue leading-normal">
-              Strong relationships are the foundation of working together to understand your unique needs.
+            Strong relationships are the foundation of working together to understand your unique needs and deliver solutions that foster long-term collaboration.
             </p>
           </div>
         </div>

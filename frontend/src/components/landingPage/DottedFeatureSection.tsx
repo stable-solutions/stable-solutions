@@ -18,22 +18,22 @@ const DottedFeatureSection = () => (
     <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <DottedFeatureCard
-                icon="/assets/capabilities-section/stack-capabilities.svg"
+                icon="/assets/landingpage/capabilities-section/stack-capabilities.svg"
                 title="Website Development"
                 description="Crafting tailor-made, responsive, and engaging websites that deliver compelling user experiences and drive business growth."
             />
             <DottedFeatureCard
-                icon="/assets/capabilities-section/mobile-capabilities.svg"
+                icon="/assets/landingpage/capabilities-section/mobile-capabilities.svg"
                 title="Mobile App Development"
                 description="Designing feature-rich, intuitive, and secure mobile apps for iOS and Android platforms that resonate with user needs and expectations."
             />
             <DottedFeatureCard
-                icon="/assets/capabilities-section/desktop-capabilities.svg"
+                icon="/assets/landingpage/capabilities-section/desktop-capabilities.svg"
                 title="Custom Software Development"
                 description="Custom solutions for desktop, web, and mobile applications to meet unique business needs."
             />
             <DottedFeatureCard
-                icon="/assets/capabilities-section/sparkle-capabilities.svg"
+                icon="/assets/landingpage/capabilities-section/sparkle-capabilities.svg"
                 title="Digital Branding & Aesthetics"
                 description="Logos, designs, graphic art, and any other custom visuals that will take your brand to the next level."
             />

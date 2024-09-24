@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => (
 
                         {/* Arrow Image - Hidden on mobile */}
                         <img 
-                            src="/assets/hero-section/arrow-hero.svg" 
+                            src="/assets/landingpage/hero-section/arrow-hero.svg" 
                             alt="arrow-hero" 
                             className="hidden md:block ml-6 w-40 h-auto"
                         />
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => (
                 {/* Rocket Image Section */}
                 <div className="flex justify-start w-full md:w-[50%]"> {/* Added container with justify-start */}
                     <img
-                        src="/assets/hero-section/rocket-hero.svg"
+                        src="/assets/landingpage/hero-section/rocket-hero.svg"
                         alt="rocket-hero"
                         className="w-full h-auto mt-6 md:mt-0"  // Brought closer to text and adjusted width
                     />

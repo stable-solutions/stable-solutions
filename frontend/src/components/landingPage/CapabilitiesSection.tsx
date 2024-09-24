@@ -13,7 +13,7 @@ const CapabilitiesSection: React.FC = () => (
     {/* Subheader with increased line spacing and 7/10 width */}
     <div className="max-w-6xl mx-auto">
       <p className="text-3xl sm:text-4xl md:text-4xl font-poppins font-extrabold text-dark-blue leading-loose mb-8 sm:w-full md:w-3/5">
-        Cutting-Edge Technologies, Tailor-Made Solutions Services by <span className="text-olive-green">Stable Solutions</span>
+        Cutting-Edge Technologies, Tailor-Made Solutions Services by <span className="text-dark-blue">Stable</span> <span className="text-olive-green">Solutions</span>
       </p>
     </div>
 
