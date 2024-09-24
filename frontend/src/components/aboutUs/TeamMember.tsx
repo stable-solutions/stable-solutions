@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; // Impo
 // TeamMember component
 const TeamMember = ({ name, role, imgSrc }) => {
   return (
-    <div className="relative w-[260px] h-62 bg-purple rounded-xl p-6 flex flex-col justify-end ">
+    <div className="relative w-48 h-62 bg-purple rounded-xl p-6 flex flex-col justify-end ">
       {/* Image positioned off-center */}
       <div className="absolute -top-16 -left-6">
         <img
