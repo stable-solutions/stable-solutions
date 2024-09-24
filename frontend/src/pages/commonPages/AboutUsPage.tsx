@@ -6,7 +6,7 @@ import TeamSection from '../../components/aboutUs/TeamSection'
 
 const AboutUsPage = () => {
     return (
-        <div className="pt-32 p-6 bg-pale-blue">
+        <div className="pt-32 bg-pale-blue">
             <AboutSection />
             <TeamSection />
             <Footer />
