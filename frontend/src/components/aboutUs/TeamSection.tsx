@@ -22,7 +22,7 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="flex flex-wrap justify-center gap-8 mt-8">
+    <section className="flex flex-wrap justify-center gap-8 mt-32 mb-24">
       {teamMembers.map((member, index) => (
         <TeamMember
           key={index}
