@@ -15,7 +15,7 @@ export default {
         'olive-green': '#a7c500',   // Olive Green
         'purple': '#87289a',        // Purple
         'pale-blue': '#ecf9ff',     // Pale Blue
-        'off-white': '#fdf5ea',     // Off-white / Beige
+        'off-white': '#fff9f1',     // Off-white / Beige
         'pale-brown': '#736b53',    // Pale Brown
       },
     },
