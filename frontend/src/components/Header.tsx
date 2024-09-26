@@ -53,7 +53,7 @@ const Header = () => {
               className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto"
               style={{ flexBasis: '65%' }}  // Slightly reduced width to make space
             >
-              Contact Us
+              Get Started
             </button>
 
             {/* LanguageSwitcher for mobile */}
@@ -89,8 +89,8 @@ const Header = () => {
           <div className="hidden md:block">
             <button
               onClick={handleNavigation('/contact-us')}
-              className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold" style={{ marginRight: '20px', width: '160px' }}>
-              Contact Us
+              className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold" style={{ marginRight: '20px', width: '180px' }}>
+              Let's get started!
             </button>
           </div>
         </div>
