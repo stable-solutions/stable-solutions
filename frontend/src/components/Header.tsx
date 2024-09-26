@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useUser } from '@clerk/clerk-react';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import LogoImage from '/assets/logos/logo-colored-official.svg';
@@ -15,7 +14,7 @@ const navItems = [
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-  const { isSignedIn } = useUser();
+ 
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -27,7 +26,7 @@ const Header: React.FC = () => {
   };
 
   const handleLogoClick = () => {
-    navigate(isSignedIn ? '/home' : '/');
+    navigate('/home');
   };
 
   return (
