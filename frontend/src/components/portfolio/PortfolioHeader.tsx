@@ -7,7 +7,7 @@ const PortfolioHeader: React.FC = () => (
     <img 
       src="/assets/portfolio/title-portfolio.svg" 
       alt="Portfolio Title"
-      className="w-full max-w-xs md:max-w-md"  // Adjust size as needed for responsiveness
+      className="w-full max-w-m md:max-w-lg"  // Adjust size as needed for responsiveness
     />
   </section>
 );

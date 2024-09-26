@@ -1,18 +1,18 @@
 import React from 'react';
 
 const PortfolioHero: React.FC = () => (
-  <section className="bg-pale-blue py-12 px-4 sm:px-8 w-full"> {/* Full width and no top margin */}
-    <div className="w-full mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0"> {/* Removed max-w-7xl for full width */}
+  <section className="bg-pale-blue py-12 px-4 sm:px-8 w-full md:w-[90%] mx-auto"> {/* Adjust width and center */}
+    <div className="w-full mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:px-8 lg:px-16 md:mt-20"> {/* Added padding for alignment */}
       
       {/* Left Section - Text Content */}
-      <div className="text-left md:w-[50%] space-y-4 md:ml-20">
+      <div className="text-left md:w-[55%] space-y-4">
         {/* Results Header */}
         <h3 className="text-olive-green text-md sm:text-lg md:text-xl font-poppins font-bold">
           Our results
         </h3>
         
         {/* Title */}
-        <h1 className="text-dark-blue text-xl sm:text-2xl md:text-2xl font-poppins font-extrabold leading-tight">
+        <h1 className="text-dark-blue text-xl sm:text-2xl md:text-3xl font-poppins font-extrabold leading-tight">
           From Idea to Reality: How <br />
           Stable <span className="text-olive-green">Solutions</span> Turns Vision into Results
         </h1>

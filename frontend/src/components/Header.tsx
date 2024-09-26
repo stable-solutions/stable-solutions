@@ -54,7 +54,7 @@ const Header = () => {
               className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto"
               style={{ flexBasis: '65%' }}  // Slightly reduced width to make space
             >
-              Get Started
+              Get Started!
             </button>
 
             {/* LanguageSwitcher for mobile */}
@@ -94,23 +94,28 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
-        <div className="md:hidden bg-white">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item, index) => (
+  <div className="md:hidden bg-pale-blue items-start">
+      <div className="px-2 pt-2 pb-3 space-y-4 sm:px-3">
+          {navItems.map((item, index) => (
               <a
-                key={index}
-                href={item.href}
-                className="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 font-poppins"
-                onClick={handleNavigation(item.href)}
+                  key={index}
+                  href={item.href}
+                  className="block w-[40%] mx-auto text-center px-3 py-4 bg-pale-blue rounded-3xl border-4 border-dark-blue border-dashed text-sm font-poppins font-bold text-dark-blue hover:text-olive-green"
+                  onClick={handleNavigation(item.href)}
+                  style={{
+                      padding: '12px 16px',  // Adding padding to create space inside the button
+                      boxSizing: 'border-box',  // Ensuring the padding doesn't change the overall button size
+                  }}
               >
-                {item.label}
+                  {item.label}
               </a>
-            ))}
-          </div>
-        </div>
-      )}
+          ))}
+      </div>
+  </div>
+)}
+
     </header>
   );
 };

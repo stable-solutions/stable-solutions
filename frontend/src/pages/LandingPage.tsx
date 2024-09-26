@@ -2,6 +2,8 @@ import React from 'react';
 import HeroSection from '../components/landingPage/HeroSection';
 import FeaturesSection from '../components/landingPage/FeaturesSection';
 import CapabilitiesSection from '../components/landingPage/CapabilitiesSection';
+import ProcessSection from '../components/landingPage/ProcessSection';
+import PortfolioSection from '../components/landingPage/PortfolioSection';
 import GreenDivider from '../components/landingPage/GreenDivider';
 import Footer from '../components/Footer';
 
@@ -26,6 +28,14 @@ const LandingPage: React.FC = () => {
             {/* Capabilities Section */}
             <div className="-mb-2">
                 <CapabilitiesSection />
+            </div>
+
+            <div className="-mb-2">
+                <ProcessSection />
+            </div>
+
+            <div className="-mb-2">
+                <PortfolioSection />
             </div>
 
             {/* Footer Section */}

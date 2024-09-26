@@ -11,7 +11,7 @@ export const portfolioImages = [
       src: '/assets/portfolio/portfolio-images/portfolioimage-carwash.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-carwash.png',
       alt: 'Carwash - Keep Your Car Clean',
-      title: 'Carwash - Keep Your Car Clean',
+      title: 'Be Carwash',
       description: 'Professional carwash services ensuring your vehicle stays clean and shiny.',
       shortName: 'carwash'
     },
@@ -35,7 +35,7 @@ export const portfolioImages = [
       src: '/assets/portfolio/portfolio-images/portfolioimage-coffeebeans.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-coffeebeans.png',
       alt: 'Coffee Beans - The Best Coffee Testing Experience',
-      title: 'Coffee Beans - The Best Coffee Testing Experience',
+      title: 'Coffee Beans',
       description: 'Explore the best coffee experience with our exclusive coffee beans.',
       shortName: 'coffeeBeans'
     },
@@ -43,7 +43,7 @@ export const portfolioImages = [
       src: '/assets/portfolio/portfolio-images/portfolioimage-Delicousfood.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-Delicousfood.png',
       alt: 'Delicious Food - Fresh and Delicious Dishes',
-      title: 'Delicious Food - Fresh and Delicious Dishes',
+      title: 'Foody',
       description: 'A variety of fresh and nutritious dishes made with love.',
       shortName: 'deliciousFood'
     },
@@ -51,7 +51,7 @@ export const portfolioImages = [
       src: '/assets/portfolio/portfolio-images/portfolioimage-delicousrecipes.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-delicousrecipes.png',
       alt: 'Delicious Recipes - Tasty and Nutritious',
-      title: 'Delicious Recipes - Tasty and Nutritious',
+      title: 'Marco Restaurant',
       description: 'Healthy, nutritious, and tasty recipes to enjoy every day.',
       shortName: 'deliciousRecipes'
     },
@@ -67,15 +67,15 @@ export const portfolioImages = [
       src: '/assets/portfolio/portfolio-images/portfolioimage-OrganizationCompanyevents.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-OrganizationCompanyevents.png',
       alt: 'Organization & Company Events',
-      title: 'Organization & Company Events',
+      title: 'Be Event',
       description: 'Expert event planning services for corporate and private occasions.',
       shortName: 'organizationCompanyEvents'
     },
     {
       src: '/assets/portfolio/portfolio-images/portfolioimage-PCITServices.png',
       fullSizeSrc: '/assets/portfolio/portfolio-images/portfolioimage-PCITServices.png',
-      alt: 'PC IT Services - Reliable IT Solutions',
-      title: 'PC IT Services - Reliable IT Solutions',
+      alt: 'BE IT Services - Reliable IT Solutions',
+      title: 'BeIT Services',
       description: 'Reliable IT support and services for businesses and personal needs.',
       shortName: 'pcITServices'
     }
