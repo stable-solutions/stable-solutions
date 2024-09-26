@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => (
   <section className="bg-pale-blue py-10 px-4 sm:px-6">
-    <div className="w-full lg:w-3/5 mx-auto grid grid-cols-1 lg:grid-cols-[35%,65%] gap-6">
+    <div className="w-full lg:w-3/5 mx-auto grid grid-cols-1 lg:grid-cols-[35%,65%] gap-6 mb-20">
       
       {/* Left Section - Contact Information */}
       <div className="bg-purple text-white p-6 space-y-6 rounded-[20px] lg:rounded-l-[20px] lg:rounded-r-none">

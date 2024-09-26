@@ -11,7 +11,7 @@ const CapabilitiesSection: React.FC = () => (
 
     {/* Adjusted line height based on screen size */}
     <div className="max-w-6xl mx-auto">
-      <p className="text-3xl sm:text-4xl md:text-4xl font-poppins font-extrabold text-dark-blue leading-tight sm:leading-snug md:leading-snug mb-4 sm:w-full md:w-3/5">
+      <p className="text-3xl sm:text-3xl md:text-3xl font-poppins font-extrabold text-dark-blue leading-tight sm:leading-snug md:leading-snug mb-4 sm:w-full md:w-3/5">
         Cutting-Edge Technologies, Tailor-Made Solutions Services by <span className="text-dark-blue">Stable</span> <span className="text-olive-green">Solutions</span>
       </p>
     </div>

@@ -8,7 +8,8 @@ import LogoImage from '/assets/logos/logo-colored-official.svg';
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about-us' },
-  // { label: 'Cost Estimator', href: '/cost-estimator' }
+  { label: 'Portfolio', href: '/portfolio' }, // Added Portfolio link here
+  { label: 'Contact Us', href: '/contact-us' },
 ];
 
 const Header = () => {
@@ -80,9 +81,6 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            {/* <div className="text-xs">
-              <LanguageSwitcher />
-            </div> */}
           </nav>
 
           {/* Right-aligned Contact Us Button for desktop */}
@@ -110,9 +108,6 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            {/* <div className="mt-4 text-xs">
-              <LanguageSwitcher />
-            </div> */}
           </div>
         </div>
       )}

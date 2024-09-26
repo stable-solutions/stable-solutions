@@ -7,18 +7,26 @@ import Footer from '../components/Footer';
 
 const LandingPage: React.FC = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col space-y-0"> {/* Added space-y-0 to remove default space between sections */}
             {/* Hero Section */}
-            <HeroSection />
+            <div className="-mb-2"> {/* Using negative margin to reduce space between sections */}
+                <HeroSection />
+            </div>
 
             {/* Features Section */}
-            <FeaturesSection />
+            <div className="-mb-2">
+                <FeaturesSection />
+            </div>
 
             {/* Green Bar Section */}
-            <GreenDivider />
+            <div className="-mb-2">
+                <GreenDivider />
+            </div>
 
             {/* Capabilities Section */}
-            <CapabilitiesSection />
+            <div className="-mb-2">
+                <CapabilitiesSection />
+            </div>
 
             {/* Footer Section */}
             <Footer />
