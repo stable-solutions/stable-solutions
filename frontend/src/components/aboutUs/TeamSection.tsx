@@ -1,4 +1,3 @@
-import React from 'react';
 import TeamMember from './TeamMember'; // Import the TeamMember component
 
 const teamMembers = [

@@ -15,7 +15,7 @@ const navigation = {
     ]
 };
 
-const Footer: React.FC = () => {
+const Footer     v=> {
     return (
         <footer className="bg-purple text-white py-4"> {/* Reduced padding-top and padding-bottom */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

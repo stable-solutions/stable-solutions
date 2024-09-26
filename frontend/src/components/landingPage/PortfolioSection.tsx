@@ -26,7 +26,7 @@ const PortfolioSection: React.FC = () => {
       {/* Portfolio Grid */}
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-          {displayedImages.map((image, index) => (
+          {displayedImages.map((image) => ( // Removed 'index'
             <div
               key={image.shortName}
               className="flex flex-col items-center cursor-pointer transition-transform transform hover:scale-105 relative group"

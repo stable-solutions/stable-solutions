@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageViewer from './ImageViewer';
+import ImageViewer from './ImageViewer.tsx';
 import { portfolioImages } from './portfolioImagesData.ts';
 
 const PortfolioImageGrid: React.FC = () => {

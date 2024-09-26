@@ -1,7 +1,15 @@
-import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
-const TeamMember = ({ name, role, imgSrc, fhref, lhref, ihref }) => {
+interface TeamMemberProps {
+  name: string;
+  role: string;
+  imgSrc: string;
+  fhref: string;
+  lhref: string;
+  ihref: string;
+}
+
+const TeamMember: React.FC<TeamMemberProps> = ({ name, role, imgSrc, fhref, lhref, ihref }) => {
   return (
     <div className="relative pr-[40px] before:content-[''] before:absolute before:bg-purple before:bottom-0 before:left-0 before:top-0 before:right-0 before:rounded-[20px] before:ml-12 sm:before:ml-12 before:mr-12 sm:before:mr-12 before:mt-[40px] before:z-[0]">
       {/* Team member image */}
