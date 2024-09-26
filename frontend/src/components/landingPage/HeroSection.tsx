@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
     <div className="relative">
       <div className="relative h-auto md:h-auto pt-2 md:pt-20 pb-20 md:pb-12 flex flex-col items-start justify-center bg-pale-blue text-left overflow-hidden px-6 md:px-12">
         {/* Container for the content */}
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-start w-full"> 
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-start w-full mt-12 md:mt-2"> 
             
           {/* Text Section */}
           <div className="flex flex-col items-start w-full md:w-[50%] space-y-4 md:space-y-3 pl-0 md:pl-0 md:pr-0 md:ml-40">
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
               <img 
                 src="/assets/landingpage/hero-section/arrow-hero.svg" 
                 alt="arrow-hero" 
-                className="hidden md:block ml-4 sm:ml-6 w-24 sm:w-32 md:w-40 h-auto"
+                className="hidden md:block ml-4 sm:ml-4 w-24 sm:w-8 md:w-40 h-auto"
               />
             </div>
           </div>
