@@ -15,7 +15,8 @@ const navigation = {
     ]
 };
 
-const Footer     v=> {
+// Fixing the syntax of the Footer function component
+const Footer: React.FC = () => {
     return (
         <footer className="bg-purple text-white py-4"> {/* Reduced padding-top and padding-bottom */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,17 +33,17 @@ const Footer     v=> {
                         </h3>
 
                         <p className="text-sm font-roboto font-bold mt-1 text-center">
-                            The <span className="italic">one stop shop</span> for all you <br/> digital professional needs.
+                            The <span className="italic">one stop shop</span> for all your <br/> digital professional needs.
                         </p>
 
                         <div className="flex justify-center mt-2 space-x-4"> {/* Reduced margin-top */}
-                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
                                 <FaFacebookF className="text-white text-xl" />
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
                                 <FaInstagram className="text-white text-xl" />
                             </a>
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="bg-purple p-2 rounded-full hover:bg-olive-green">
                                 <FaLinkedinIn className="text-white text-xl" />
                             </a>
                         </div>
