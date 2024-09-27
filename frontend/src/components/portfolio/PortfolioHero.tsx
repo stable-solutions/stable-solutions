@@ -27,7 +27,7 @@ const PortfolioHero: React.FC = () => (
       {/* Right Section - Image */}
       <div className="mt-8 md:mt-0 md:w-[45%] flex justify-center md:mr-12">
         <img 
-          src="/assets/portfolio/target-portfolio.svg"  // Make sure the correct file path is used
+          src="/assets/portfolio/target-portfolio.svg" 
           alt="Target Portfolio Illustration"
           className="w-full max-w-[300px] md:max-w-[450px] h-auto"
         />
