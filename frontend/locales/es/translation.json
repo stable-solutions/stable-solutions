@@ -1,0 +1,103 @@
+{
+    "header.home": "Inicio",
+    "header.about": "Acerca de",
+    "header.contact": "Contacto",
+    "header.portfolio": "Portafolio",
+    "header.contactButton": "¡Comencemos!",
+    "popup.selectLanguage": "Seleccionar Idioma",
+    "landingpage.section1.line1": "Eleva tu Profesionalismo Digital con",
+    "landingpage.section1.line2": "Encuentra soluciones que se alineen con los objetivos de tu negocio y aseguren resultados de alta calidad cada vez.",
+    "landingpage.section1.button": "¡Hablemos!",
+    "landingpage.section2.line1": "La tienda única para todas tus necesidades profesionales digitales.",
+    "landingpage.section2.line2": "Transformando las capacidades digitales y la presencia en línea de tu negocio para reflejar lo increíble que eres.",
+    "landingpage.section2.line3": "Desbloquea el potencial de la inteligencia artificial adaptada específicamente a las necesidades de tu negocio. Juntos podemos descubrir cómo usar la IA para facilitar tu vida.",
+    "landingpage.section2.line4": "Nuestro equipo puede ayudarte a combinar la estética con la tecnología, ¡entregando sitios web impresionantes y aplicaciones atractivas! Ve tu marca como nunca antes.",
+    "landingpage.section2.line5": "Las relaciones sólidas son la base para trabajar juntos, entender tus necesidades únicas y ofrecer soluciones que fomenten la colaboración a largo plazo.",
+    "landingpage.section2.line6": "¡Convierte tus visiones en realidad! Desde configurar tu dominio y correo electrónico empresarial, hasta el diseño y desarrollo de tu sitio web o aplicación, lo hacemos todo.",
+    "landingpage.section2.title1": "Herramientas de IA Personalizadas",
+    "landingpage.section2.title2": "Diseño Creativo",
+    "landingpage.section2.title3": "Servicio Completo Digital",
+    "landingpage.section2.title4": "Marketing Digital",
+    "landingpage.section3.title": "Capacidades",
+    "landingpage.section3.line1": "Tecnologías de Vanguardia, Soluciones a Medida Servicios por",
+    "landingpage.capabilities.webdev.title": "Desarrollo de Sitios Web",
+    "landingpage.capabilities.webdev.description": "Creación de sitios web personalizados, responsivos y atractivos que ofrecen experiencias de usuario convincentes y fomentan el crecimiento empresarial.",
+    "landingpage.capabilities.mobiledev.title": "Desarrollo de Aplicaciones Móviles",
+    "landingpage.capabilities.mobiledev.description": "Diseño de aplicaciones móviles ricas en funciones, intuitivas y seguras para plataformas iOS y Android que resuenan con las necesidades y expectativas de los usuarios.",
+    "landingpage.capabilities.customdev.title": "Desarrollo de Software a Medida",
+    "landingpage.capabilities.customdev.description": "Soluciones personalizadas para aplicaciones de escritorio, web y móviles que satisfacen las necesidades empresariales únicas.",
+    "landingpage.capabilities.branding.title": "Branding Digital y Estética",
+    "landingpage.capabilities.branding.description": "Logotipos, diseños, arte gráfico y cualquier otro material visual personalizado que llevará tu marca al siguiente nivel.",
+    "landingpage.process.subtitle": "Nuestro Proceso",
+    "landingpage.process.title": "El Arte de Crear Gran Software: Nuestro Proceso de Desarrollo",
+    "landingpage.process.step1.title": "Planificación y Descubrimiento",
+    "landingpage.process.step1.description": "Esta fase implica comprender las necesidades de tu proyecto y definir el alcance.",
+    "landingpage.process.step2.title": "Creación de Estrategia de Diseño",
+    "landingpage.process.step2.description": "Definimos la estrategia de diseño y creamos prototipos de UI/UX para tu proyecto.",
+    "landingpage.process.step3.title": "Desarrollo y Refinamiento",
+    "landingpage.process.step3.description": "Nuestro equipo construye, prueba y refina la solución, asegurando un rendimiento óptimo.",
+    "landingpage.process.step4.title": "Lanzamiento y Soporte",
+    "landingpage.process.step4.description": "Aseguramos un lanzamiento sin problemas y ofrecemos soporte continuo para tu solución.",
+    "landingpage.process.imageAlt": "Gráficos del Proceso",
+    "landingpage.process.proposalButton": "Obtener una Propuesta",
+    "portfolio.hero.title": "Nuestros Resultados",
+    "portfolio.hero.subtitle": "De la Idea a la Realidad: Cómo Stable Solutions Transforma la Visión en Resultados",
+    "portfolio.hero.description": "Impulsar el crecimiento empresarial está en el corazón de lo que hacemos en Stable Solutions, guiándote a través del paisaje moderno para ampliar tu alcance y construir sistemas duraderos de éxito.",
+    "footer": {
+        "description": "La <1>tienda única</1> para todas tus <1>necesidades profesionales digitales</1>.",
+        "aboutus": "Acerca de Nosotros",
+        "company": "Compañía",
+        "contactus": "Contáctanos",
+        "meetourteam": "Conoce a Nuestro Equipo",
+        "portfolio": "Portafolio",
+        "copyright": "© {{year}} Stable Solutions LLC. Todos los derechos reservados."
+    },
+    "aboutus": {
+        "title": "Acerca de Nosotros",
+        "subtitle": "Conoce a las Caras de {{company}}: Una Orquesta de Desarrollo de Software",
+        "description": "Alcanza tus Sueños de Profesionalismo Digital,\nJunto con Stable Solutions",
+        "imageAlt": "Ilustración de colaboración en equipo",
+        "teamHeader": {
+            "title": "Nuestro Equipo",
+            "subtitle": "El trabajo en equipo hace que el SUEÑO funcione: \nNuestro Esfuerzo, Tu Éxito"
+        }
+    },
+    "contactus": {
+        "hero": {
+            "title": "Tu Puente al Éxito: ¡Conéctate con nosotros hoy y lleva tu profesionalismo digital al siguiente nivel!",
+            "subtitle": "Estamos más que listos para iniciar una conversación sobre tu proyecto. Estamos comprometidos a entregar soluciones innovadoras y de alta calidad que satisfagan tus necesidades exactas. No dudes en comunicarte—¡demos forma juntos al futuro de tu presencia en línea!",
+            "imageAlt": "Ilustración del Héroe de Contacto"
+        },
+        "header": {
+            "title": "Ponte en Contacto",
+            "subtitle": "Tu Puerta de Entrada al Profesionalismo: Contacta",
+            "subtitleContinued": "Con Nosotros y Desbloquea un Mundo de Posibilidades"
+        },
+        "officeAddress": "Dirección de la Oficina",
+        "mapIconAlt": "Icono de Mapa",
+        "address": [
+            "255 S Orange Ave",
+            "Suite 104 #1765",
+            "Orlando, FL 32801 USA"
+        ],
+        "phoneNumber": "Número de Teléfono",
+        "phoneIconAlt": "Icono de Teléfono",
+        "phone": "+1 407-451-8193",
+        "emailUs": "Envíanos un Correo",
+        "emailIconAlt": "Icono de Correo Electrónico",
+        "email": "support@stablesolutions.pro",
+        "form": {
+            "name": "Tu Nombre",
+            "namePlaceholder": "Ingresa tu nombre",
+            "email": "Tu Correo Electrónico",
+            "emailPlaceholder": "Ingresa tu dirección de correo",
+            "phone": "Tu Teléfono",
+            "phonePlaceholder": "Ingresa tu número de teléfono",
+            "business": "Tu Negocio",
+            "businessPlaceholder": "Ingresa tu negocio",
+            "message": "Tu Mensaje :)",
+            "messagePlaceholder": "Ingresa tu mensaje",
+            "submitButton": "Enviar Ahora"
+        }
+    }
+}

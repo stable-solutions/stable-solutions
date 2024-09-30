@@ -1,1 +1,103 @@
-{}
+{
+    "header.home": "首页",
+    "header.about": "关于",
+    "header.contact": "联系",
+    "header.portfolio": "作品集",
+    "header.contactButton": "让我们开始吧！",
+    "popup.selectLanguage": "选择语言",
+    "landingpage.section1.line1": "提升您的数字专业水平，与",
+    "landingpage.section1.line2": "找到与您的业务目标一致的解决方案，确保每次都能获得高质量的结果。",
+    "landingpage.section1.button": "让我们谈谈！",
+    "landingpage.section2.line1": "满足您所有数字专业需求的一站式服务。",
+    "landingpage.section2.line2": "转变您企业的数字能力和在线形象，展现您的卓越！",
+    "landingpage.section2.line3": "解锁专为您的业务需求量身定制的人工智能潜力。我们可以共同探索如何利用AI让您的生活更轻松。",
+    "landingpage.section2.line4": "我们的团队可以帮助您将美学与技术相结合，打造令人惊叹的网站和引人入胜的应用程序！以前所未有的方式展示您的品牌。",
+    "landingpage.section2.line5": "牢固的关系是共同理解您独特需求并提供促进长期合作的解决方案的基础。",
+    "landingpage.section2.line6": "将您的愿景变为现实！从设置您的域名和企业邮箱，到网站或应用程序的设计与开发，我们全程负责。",
+    "landingpage.section2.title1": "定制AI工具",
+    "landingpage.section2.title2": "创意设计",
+    "landingpage.section2.title3": "数字全方位服务",
+    "landingpage.section2.title4": "数字营销",
+    "landingpage.section3.title": "能力",
+    "landingpage.section3.line1": "尖端技术，量身定制的解决方案，由",
+    "landingpage.capabilities.webdev.title": "网站开发",
+    "landingpage.capabilities.webdev.description": "打造量身定制的响应式和引人入胜的网站，提供令人信服的用户体验并推动业务增长。",
+    "landingpage.capabilities.mobiledev.title": "移动应用开发",
+    "landingpage.capabilities.mobiledev.description": "为iOS和Android平台设计功能丰富、直观且安全的移动应用，满足用户需求和期望。",
+    "landingpage.capabilities.customdev.title": "定制软件开发",
+    "landingpage.capabilities.customdev.description": "为桌面、网页和移动应用提供定制解决方案，以满足独特的业务需求。",
+    "landingpage.capabilities.branding.title": "数字品牌和美学",
+    "landingpage.capabilities.branding.description": "标志、设计、图形艺术以及任何其他定制视觉效果，将您的品牌提升到一个新的水平。",
+    "landingpage.process.subtitle": "我们的流程",
+    "landingpage.process.title": "打造优秀软件的艺术：我们的开发流程",
+    "landingpage.process.step1.title": "规划与发现",
+    "landingpage.process.step1.description": "这一阶段涉及了解您的项目需求并定义范围。",
+    "landingpage.process.step2.title": "创建设计策略",
+    "landingpage.process.step2.description": "我们定义设计策略并为您的项目创建UI/UX原型。",
+    "landingpage.process.step3.title": "开发与优化",
+    "landingpage.process.step3.description": "我们的团队构建、测试并优化解决方案，确保最佳性能。",
+    "landingpage.process.step4.title": "发布与支持",
+    "landingpage.process.step4.description": "我们确保顺利发布并为您的解决方案提供持续支持。",
+    "landingpage.process.imageAlt": "流程图形",
+    "landingpage.process.proposalButton": "获取提案",
+    "portfolio.hero.title": "我们的成果",
+    "portfolio.hero.subtitle": "从理念到现实：Stable Solutions 如何将愿景转化为成果",
+    "portfolio.hero.description": "推动业务增长是Stable Solutions的核心使命，引导您在现代环境中扩大影响力，构建持久的成功体系。",
+    "footer": {
+        "description": "为您所有<1>数字专业需求</1>提供<1>一站式服务</1>。",
+        "aboutus": "关于我们",
+        "company": "公司",
+        "contactus": "联系我们",
+        "meetourteam": "认识我们的团队",
+        "portfolio": "作品集",
+        "copyright": "© {{year}} Stable Solutions LLC. 版权所有。"
+    },
+    "aboutus": {
+        "title": "关于我们",
+        "subtitle": "认识{{company}}的面孔：软件开发的乐团",
+        "description": "实现您的数字专业梦想，\n与Stable Solutions携手共进",
+        "imageAlt": "团队合作的插图",
+        "teamHeader": {
+            "title": "我们的团队",
+            "subtitle": "团队合作让梦想成真：\n我们的努力，您的成功"
+        }
+    },
+    "contactus": {
+        "hero": {
+            "title": "通往成功的桥梁：今天就与我们联系，将您的数字专业水平提升到新高度！",
+            "subtitle": "我们已准备好与您讨论您的项目。我们致力于提供高质量、创新的解决方案，以满足您的具体需求。不要犹豫，立即联系——让我们一起塑造您的在线未来！",
+            "imageAlt": "联系英雄插图"
+        },
+        "header": {
+            "title": "取得联系",
+            "subtitle": "通往专业水平的门户：联系",
+            "subtitleContinued": "我们，开启无限可能"
+        },
+        "officeAddress": "办公地址",
+        "mapIconAlt": "地图图标",
+        "address": [
+            "255 S Orange Ave",
+            "Suite 104 #1765",
+            "Orlando, FL 32801 USA"
+        ],
+        "phoneNumber": "电话号码",
+        "phoneIconAlt": "电话图标",
+        "phone": "+1 407-451-8193",
+        "emailUs": "发送电子邮件",
+        "emailIconAlt": "电子邮件图标",
+        "email": "support@stablesolutions.pro",
+        "form": {
+            "name": "您的姓名",
+            "namePlaceholder": "请输入您的姓名",
+            "email": "您的电子邮件",
+            "emailPlaceholder": "请输入您的电子邮件地址",
+            "phone": "您的电话",
+            "phonePlaceholder": "请输入您的电话号码",
+            "business": "您的业务",
+            "businessPlaceholder": "请输入您的业务",
+            "message": "您的留言 :)",
+            "messagePlaceholder": "请输入您的留言",
+            "submitButton": "立即提交"
+        }
+    }
+}

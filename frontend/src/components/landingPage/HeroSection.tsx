@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useTranslation } from 'react-i18next';
+import LogoText from '../LogoText';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();  // Initialize navigation
-
+  const { t } = useTranslation();
   // Function to handle navigation to the contact us page
   const handleContactClick = () => {
     navigate('/contact-us');  // Navigate to contact-us page
@@ -18,10 +20,10 @@ const HeroSection: React.FC = () => {
           {/* Text Section */}
           <div className="flex flex-col items-start w-full md:w-[50%] space-y-4 md:space-y-3 pl-0 md:pl-0 md:pr-0 md:ml-40">
             <h1 className="text-4xl sm:text-4xl md:text-4xl font-poppins font-extrabold text-dark-blue leading-snug md:leading-normal ">
-              Elevate your Digital Professionalism with <span className="text-dark-blue">Stable&nbsp;</span><span className="text-olive-green">Solutions</span>
+              {t('landingpage.section1.line1')} <LogoText />
             </h1>
             <p className="text-lg sm:text-lg md:text-2xl text-dark-blue font-roboto font-bold mt-4 md:mt-4 lg:mt-40">
-              Find solutions that align with your business goals and ensure high-quality results every time.
+              {t('landingpage.section1.line2')}
             </p>
 
             {/* Button and Arrow Section */}
@@ -31,7 +33,7 @@ const HeroSection: React.FC = () => {
                 onClick={handleContactClick}  // Set button to navigate to contact-us
                 className="px-8 py-3 sm:px-10 sm:py-3 bg-olive-green text-white rounded-full text-sm sm:text-base md:text-lg font-poppins font-semibold"
               >
-                Let's Talk!
+                {t('landingpage.section1.button')}
               </button>
 
               {/* Arrow Image - Hidden on mobile */}

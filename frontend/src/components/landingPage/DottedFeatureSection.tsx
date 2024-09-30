@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface DottedFeatureCardProps {
     icon: string;
@@ -20,31 +21,35 @@ const DottedFeatureCard: React.FC<DottedFeatureCardProps> = ({ icon, title, desc
     </div>
 );
 
-const DottedFeatureSection: React.FC = () => (
-    <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <DottedFeatureCard
-                icon="/assets/landingpage/capabilities-section/stack-capabilities.svg"
-                title="Website Development"
-                description="Crafting tailor-made, responsive, and engaging websites that deliver compelling user experiences and drive business growth."
-            />
-            <DottedFeatureCard
-                icon="/assets/landingpage/capabilities-section/mobile-capabilities.svg"
-                title="Mobile App Development"
-                description="Designing feature-rich, intuitive, and secure mobile apps for iOS and Android platforms that resonate with user needs and expectations."
-            />
-            <DottedFeatureCard
-                icon="/assets/landingpage/capabilities-section/desktop-capabilities.svg"
-                title="Custom Software Development"
-                description="Custom solutions for desktop, web, and mobile applications to meet unique business needs."
-            />
-            <DottedFeatureCard
-                icon="/assets/landingpage/capabilities-section/sparkle-capabilities.svg"
-                title="Digital Branding & Aesthetics"
-                description="Logos, designs, graphic art, and any other custom visuals that will take your brand to the next level."
-            />
+const DottedFeatureSection: React.FC = () => {
+    const { t } = useTranslation();
+
+    return (
+        <div className="container mx-auto px-4 py-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <DottedFeatureCard
+                    icon="/assets/landingpage/capabilities-section/stack-capabilities.svg"
+                    title={t('landingpage.capabilities.webdev.title')}
+                    description={t('landingpage.capabilities.webdev.description')}
+                />
+                <DottedFeatureCard
+                    icon="/assets/landingpage/capabilities-section/mobile-capabilities.svg"
+                    title={t('landingpage.capabilities.mobiledev.title')}
+                    description={t('landingpage.capabilities.mobiledev.description')}
+                />
+                <DottedFeatureCard
+                    icon="/assets/landingpage/capabilities-section/desktop-capabilities.svg"
+                    title={t('landingpage.capabilities.customdev.title')}
+                    description={t('landingpage.capabilities.customdev.description')}
+                />
+                <DottedFeatureCard
+                    icon="/assets/landingpage/capabilities-section/sparkle-capabilities.svg"
+                    title={t('landingpage.capabilities.branding.title')}
+                    description={t('landingpage.capabilities.branding.description')}
+                />
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 export default DottedFeatureSection;

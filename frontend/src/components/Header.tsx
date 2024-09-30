@@ -3,18 +3,20 @@ import { useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import LogoImage from '/assets/logos/logo-colored-official.svg';
+import { useTranslation } from 'react-i18next';
+import LogoText from './LogoText';
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/about-us' },
-  { label: 'Portfolio', href: '/portfolio' }, // Added Portfolio link here
-  { label: 'Contact Us', href: '/contact-us' },
+  { label: 'header.home', href: '/' },
+  { label: 'header.about', href: '/about-us' },
+  { label: 'header.portfolio', href: '/portfolio' }, // Added Portfolio link here
+  { label: 'header.contact', href: '/contact-us' },
 ];
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
- 
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -41,7 +43,7 @@ const Header: React.FC = () => {
               <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-7" />
               {/* Logo text only visible on desktop (md and above) */}
               <span className="hidden md:block text-xl sm:text-2xl font-bold text-dark-blue font-poppins font-extrabold ml-2">
-                Stable Solutions
+                <LogoText />
               </span>
             </div>
           </div>
@@ -54,7 +56,7 @@ const Header: React.FC = () => {
               className="px-4 py-2 bg-olive-green text-white rounded-full text-sm sm:text-base font-poppins font-bold mx-auto"
               style={{ flexBasis: '65%' }}
             >
-              Get Started!
+              {t('header.contactButton')}
             </button>
 
             {/* LanguageSwitcher for mobile */}
@@ -78,20 +80,21 @@ const Header: React.FC = () => {
                 onClick={handleNavigation(item.href)}
                 className="text-dark-blue hover:text-olive-green px-2 py-1 rounded-md text-base font-poppins font-bold"
               >
-                {item.label}
+                {t(`${item.label.toLowerCase()}`)}
               </a>
             ))}
           </nav>
 
-          {/* Right-aligned Contact Us Button for desktop */}
-          <div className="hidden md:block">
+          {/* Right-aligned Contact Us Button and LanguageSwitcher for desktop */}
+          <div className="hidden md:flex items-center">
             <button
               onClick={() => navigate('/contact-us')}
-              className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold"
-              style={{ marginRight: '20px', width: '180px' }}
+              className="px-4 py-2 bg-olive-green text-white rounded-full text-base font-poppins font-bold mr-4"
+              style={{ width: '180px' }}
             >
-              Let's get started!
+              {t('header.contact')}
             </button>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -110,7 +113,7 @@ const Header: React.FC = () => {
                   boxSizing: 'border-box', 
                 }}
               >
-                {item.label}
+                {t(`${item.label.toLowerCase()}`)}
               </a>
             ))}
           </div>

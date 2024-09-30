@@ -1,7 +1,103 @@
 {
-    "landingpage.section1.line1": "Elevate your Digital",
-    "landingpage.section1.line2": "to Life with",
     "header.home": "Home",
     "header.about": "About",
-    "header.contact": "Contact"
+    "header.contact": "Contact",
+    "header.portfolio": "Portfolio",
+    "header.contactButton": "Let's get started!",
+    "popup.selectLanguage": "Select Language",
+    "landingpage.section1.line1": "Elevate your Digital Professionalism with",
+    "landingpage.section1.line2": "Find solutions that align with your business goals and ensure high-quality results every time.",
+    "landingpage.section1.button": "Let's Talk!",
+    "landingpage.section2.line1": "The one-stop shop for all your digital professional needs.",
+    "landingpage.section2.line2": "Transforming your business's digital capacities and online presence to reflect how awesome you are!",
+    "landingpage.section2.line3": "Unlock the potential of artificial intelligence tailored specifically to your business needs. Together we can find how we can use AI to make your life easier.",
+    "landingpage.section2.line4": "Our team can help you blend the aesthetic with the technology, delivering stunning websites and engaging apps! See your brand like never before.",
+    "landingpage.section2.line5": "Strong relationships are the foundation of working together to understand your unique needs and deliver solutions that foster long-term collaboration.",
+    "landingpage.section2.line6": "Turn your visions into reality! From setting up your domain and business email, to design and development of your website or app, we do it all.",
+    "landingpage.section2.title1": "Custom AI Tools",
+    "landingpage.section2.title2": "Creative Design",
+    "landingpage.section2.title3": "Digital Full Service",
+    "landingpage.section2.title4": "Digital Marketing",
+    "landingpage.section3.title": "Capabilities",
+    "landingpage.section3.line1": "Cutting-Edge Technologies, Tailor-Made Solutions Services by",
+    "landingpage.capabilities.webdev.title": "Website Development",
+    "landingpage.capabilities.webdev.description": "Crafting tailor-made, responsive, and engaging websites that deliver compelling user experiences and drive business growth.",
+    "landingpage.capabilities.mobiledev.title": "Mobile App Development",
+    "landingpage.capabilities.mobiledev.description": "Designing feature-rich, intuitive, and secure mobile apps for iOS and Android platforms that resonate with user needs and expectations.",
+    "landingpage.capabilities.customdev.title": "Custom Software Development",
+    "landingpage.capabilities.customdev.description": "Custom solutions for desktop, web, and mobile applications to meet unique business needs.",
+    "landingpage.capabilities.branding.title": "Digital Branding & Aesthetics",
+    "landingpage.capabilities.branding.description": "Logos, designs, graphic art, and any other custom visuals that will take your brand to the next level.",
+    "landingpage.process.subtitle": "Our Process",
+    "landingpage.process.title": "The Art of Crafting Great Software: Our Development Process",
+    "landingpage.process.step1.title": "Planning & Discovery",
+    "landingpage.process.step1.description": "This phase involves understanding your project needs and defining the scope.",
+    "landingpage.process.step2.title": "Creating Design Strategy",
+    "landingpage.process.step2.description": "We define the design strategy and create UI/UX prototypes for your project.",
+    "landingpage.process.step3.title": "Development & Refinement",
+    "landingpage.process.step3.description": "Our team builds, tests, and refines the solution, ensuring optimal performance.",
+    "landingpage.process.step4.title": "Launch & Support",
+    "landingpage.process.step4.description": "We ensure a smooth launch and offer ongoing support for your solution.",
+    "landingpage.process.imageAlt": "Process Graphics",
+    "landingpage.process.proposalButton": "Get a Proposal",
+    "portfolio.hero.title": "Our Results",
+    "portfolio.hero.subtitle": "From Idea to Reality: How Stable Solutions Turns Vision into Results",
+    "portfolio.hero.description": "Driving business growth is at the core of what we do at Stable Solutions, guiding you through the modern landscape to broaden your reach and build lasting systems of success.",
+    "footer": {
+        "description": "The <1>one stop shop</1> for all your <1>digital professional needs</1>.",
+        "aboutus": "About Us",
+        "company": "Company",
+        "contactus": "Contact Us",
+        "meetourteam": "Meet our Team",
+        "portfolio": "Portfolio",
+        "copyright": "© {{year}} Stable Solutions LLC. All rights reserved."
+    },
+    "aboutus": {
+        "title": "About Us",
+        "subtitle": "Meet the Faces of {{company}}: An Orchestra of Software Development",
+        "description": "Reach your Digital Professional Dreams,\nTogether with Stable Solutions",
+        "imageAlt": "Illustration of team collaboration",
+        "teamHeader": {
+            "title": "Our Team",
+            "subtitle": "Teamwork makes the DREAM work: \nOur Effort, Your Success"
+        }
+    },
+    "contactus": {
+        "hero": {
+            "title": "Your Bridge to Success: Connect with us today and take your digital professionalism to the next level!",
+            "subtitle": "We're more than ready to start a conversation about your project. We're committed to delivering high-quality, innovative solutions that meet your exact needs. Don't hesitate to reach out—let's shape the future of you online together!",
+            "imageAlt": "Contact Hero Illustration"
+        },
+        "header": {
+            "title": "Get in Touch",
+            "subtitle": "Your Gateway to Professionalism: Contact",
+            "subtitleContinued": "Us and Unlock a World of Possibilities"
+        },
+        "officeAddress": "Office Address",
+        "mapIconAlt": "Map Icon",
+        "address": [
+            "255 S Orange Ave",
+            "Suite 104 #1765",
+            "Orlando, FL 32801 USA"
+        ],
+        "phoneNumber": "Phone Number",
+        "phoneIconAlt": "Phone Icon",
+        "phone": "+1 407-451-8193",
+        "emailUs": "Email Us",
+        "emailIconAlt": "Email Icon",
+        "email": "support@stablesolutions.pro",
+        "form": {
+            "name": "Your Name",
+            "namePlaceholder": "Enter your name",
+            "email": "Your Email",
+            "emailPlaceholder": "Enter your email address",
+            "phone": "Your Phone",
+            "phonePlaceholder": "Enter your phone number",
+            "business": "Your Business",
+            "businessPlaceholder": "Enter your business",
+            "message": "Your Message :)",
+            "messagePlaceholder": "Enter your message",
+            "submitButton": "Submit Now"
+        }
+    }
 }

@@ -1,4 +1,9 @@
-const ContactSection = () => (
+import { useTranslation } from 'react-i18next';
+
+const ContactSection = () => {
+  const { t } = useTranslation();
+
+  return (
     <section className="bg-pale-blue py-10 px-4 sm:px-6">
       <div className="w-full lg:w-3/5 mx-auto grid grid-cols-1 lg:grid-cols-[35%,65%] gap-6 mb-20">
         
@@ -7,55 +12,45 @@ const ContactSection = () => (
           
           {/* Office Address */}
           <div className="border border-white border-3 rounded-lg p-4 space-y-3">
-            <h3 className="text-md font-poppins font-bold">Office Address</h3>
+            <h3 className="text-md font-poppins font-bold">{t('contactus.officeAddress')}</h3>
             <div className="flex items-start space-x-3">
-              {/* SVG Icon for Address */}
               <div className="w-10 h-10 flex-shrink-0">
-                <img src="/assets/contactus/mapicon-contactus.svg" alt="Map Icon" className="w-full h-full" />
+                <img src="/assets/contactus/mapicon-contactus.svg" alt={t('contactus.mapIconAlt')} className="w-full h-full" />
               </div>
               <p className="font-poppins text-md">
-                255 S Orange Ave <br /> 
-                Suite 104 #1765 <br /> 
-                Orlando, FL 32801 USA
+                {t('contactus.address', { returnObjects: true }).map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
               </p>
             </div>
           </div>
   
           {/* Phone Number */}
           <div className="border border-white border-3 rounded-lg p-4 space-y-3">
-            <h3 className="text-md font-poppins font-bold">Phone Number</h3>
+            <h3 className="text-md font-poppins font-bold">{t('contactus.phoneNumber')}</h3>
             <div className="flex items-start space-x-3">
-              {/* SVG Icon for Phone */}
               <div className="w-10 h-10 flex-shrink-0">
-                <img src="/assets/contactus/phoneicon-contactus.svg" alt="Phone Icon" className="w-full h-full" />
+                <img src="/assets/contactus/phoneicon-contactus.svg" alt={t('contactus.phoneIconAlt')} className="w-full h-full" />
               </div>
-              <p className="font-poppins text-md">+1 407-451-8193</p>
+              <p className="font-poppins text-md">{t('contactus.phone')}</p>
             </div>
           </div>
   
           {/* Email Us */}
           <div className="border border-white border-3 rounded-lg p-4 space-y-3">
-          <h3 className="text-md font-poppins font-bold">Email Us</h3>
-          <div className="flex items-start space-x-3">
-              {/* SVG Icon for Email */}
+            <h3 className="text-md font-poppins font-bold">{t('contactus.emailUs')}</h3>
+            <div className="flex items-start space-x-3">
               <div className="w-10 h-10 flex-shrink-0">
-              <img src="/assets/contactus/emailicon-contactus.svg" alt="Email Icon" className="w-full h-full" />
+                <img src="/assets/contactus/emailicon-contactus.svg" alt={t('contactus.emailIconAlt')} className="w-full h-full" />
               </div>
-  
-              {/* Display unbroken email on mobile and broken email on desktop */}
-              <p className="font-poppins text-md">
-              {/* Unbroken email for mobile */}
-              <span className="block md:hidden">support@stablesolutions.pro</span>
-  
-              {/* Broken email for desktop (md and above) */}
-              <span className="hidden md:block">
-                  support<br />
-                  @stablesolutions.pro
-              </span>
+              <p className="font-poppins text-md break-all overflow-hidden">
+                {t('contactus.email')}
               </p>
+            </div>
           </div>
-          </div>
-  
         </div>
   
         {/* Right Section - Contact Form */}
@@ -64,12 +59,12 @@ const ContactSection = () => (
             {/* Name Field */}
             <div>
               <label className="block text-dark-blue font-poppins font-semibold text-sm" htmlFor="yourname">
-                Your Name
+                {t('contactus.form.name')}
               </label>
               <input
                 id="yourname"
                 type="text"
-                placeholder="Enter your name"
+                placeholder={t('contactus.form.namePlaceholder')}
                 className="w-full h-10 border-2 border-dashed border-dark-blue rounded-full px-3 placeholder-gray-500 font-poppins text-sm"
                 required
               />
@@ -78,12 +73,12 @@ const ContactSection = () => (
             {/* Email Field */}
             <div>
               <label className="block text-dark-blue font-poppins font-semibold text-sm" htmlFor="youremail">
-                Your Email
+                {t('contactus.form.email')}
               </label>
               <input
                 id="youremail"
                 type="email"
-                placeholder="Enter your email address"
+                placeholder={t('contactus.form.emailPlaceholder')}
                 className="w-full h-10 border-2 border-dashed border-dark-blue rounded-full px-3 placeholder-gray-500 font-poppins text-sm"
                 required
               />
@@ -92,12 +87,12 @@ const ContactSection = () => (
             {/* Phone Field */}
             <div>
               <label className="block text-dark-blue font-poppins font-semibold text-sm" htmlFor="yourphone">
-                Your Phone
+                {t('contactus.form.phone')}
               </label>
               <input
                 id="yourphone"
                 type="text"
-                placeholder="Enter your phone number"
+                placeholder={t('contactus.form.phonePlaceholder')}
                 className="w-full h-10 border-2 border-dashed border-dark-blue rounded-full px-3 placeholder-gray-500 font-poppins text-sm"
                 required
               />
@@ -106,12 +101,12 @@ const ContactSection = () => (
             {/* Business Field */}
             <div>
               <label className="block text-dark-blue font-poppins font-semibold text-sm" htmlFor="yourbusiness">
-                Your Business
+                {t('contactus.form.business')}
               </label>
               <input
                 id="yourbusiness"
                 type="text"
-                placeholder="Enter your business"
+                placeholder={t('contactus.form.businessPlaceholder')}
                 className="w-full h-10 border-2 border-dashed border-dark-blue rounded-full px-3 placeholder-gray-500 font-poppins text-sm"
                 required
               />
@@ -120,12 +115,12 @@ const ContactSection = () => (
             {/* Message Field */}
             <div>
               <label className="block text-dark-blue font-poppins font-semibold text-sm" htmlFor="yourmessage">
-                Your Message :)
+                {t('contactus.form.message')}
               </label>
               <textarea
                 id="yourmessage"
-                rows={4}  // Changed from string to number
-                placeholder="Enter your message"
+                rows={4}
+                placeholder={t('contactus.form.messagePlaceholder')}
                 className="w-full border-2 border-dashed border-dark-blue rounded-lg px-3 py-1 placeholder-gray-500 font-poppins text-sm"
                 required
               ></textarea>
@@ -134,9 +129,9 @@ const ContactSection = () => (
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-olive-green text-white py-2 px-6 rounded-full font-poppins font-semibold text-sm hover:bg-pale-blue hover: text-olive-green transition"
+              className="bg-olive-green text-white py-2 px-6 rounded-full font-poppins font-semibold text-sm hover:bg-pale-blue hover:text-olive-green transition"
             >
-              Submit Now
+              {t('contactus.form.submitButton')}
               <span className="ml-2">➔</span>
             </button>
           </form>
@@ -144,6 +139,6 @@ const ContactSection = () => (
       </div>
     </section>
   );
-  
-  export default ContactSection;
-  
+};
+
+export default ContactSection;

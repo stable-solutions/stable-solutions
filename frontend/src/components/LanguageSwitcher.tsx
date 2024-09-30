@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
     const languageOptions = [
         { value: 'en', label: 'English' },
         { value: 'zh', label: '简体中文' },
-        // Add more languages as needed
+        { value: 'es', label: 'Español' },
     ];
 
     return (
