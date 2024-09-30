@@ -64,10 +64,10 @@ const Header: React.FC = () => {
               <LanguageSwitcher />
             </div>
 
-            {/* Mobile Menu Toggle stays on the right */}
-            <button onClick={toggleMenu} className="text-gray-700 hover:text-gray-900 focus:outline-none">
+            {/* Mobile Menu Toggle stays on the right  Q: What is this?*/}
+            <button onClick={toggleMenu} className="text-dark-blue hover:text-gray-900 focus:outline-none">
               <span className="sr-only">Open main menu</span>
-              {isMenuOpen ? <X size={18} /> : <Menu size={18} />}
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
 
