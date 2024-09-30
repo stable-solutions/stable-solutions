@@ -18,7 +18,8 @@ const ContactSection = () => {
                 <img src="/assets/contactus/mapicon-contactus.svg" alt={t('contactus.mapIconAlt')} className="w-full h-full" />
               </div>
               <p className="font-poppins text-md">
-                {t('contactus.address', { returnObjects: true }).map((line, index) => (
+                {/* Ensure contactus.address is an array in your translation JSON */}
+                {(t('contactus.address', { returnObjects: true }) as string[]).map((line: string, index: number) => (
                   <span key={index}>
                     {line}
                     <br />

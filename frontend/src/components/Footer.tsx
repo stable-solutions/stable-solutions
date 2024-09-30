@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
 
                         <p className="text-sm font-roboto font-bold mt-1 text-center">
                             <Trans i18nKey="footer.description">
-                                The <strong>one stop shop</strong> for all your <strong>digital professional needs</strong>.
+                                The <strong>one stop shop</strong> for all your <br/> <strong>digital professional needs</strong>.
                             </Trans>
                         </p>
 
