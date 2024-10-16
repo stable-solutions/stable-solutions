@@ -43,6 +43,9 @@
     "portfolio.hero.title": "Our Results",
     "portfolio.hero.subtitle": "From Idea to Reality: How Stable Solutions Turns Vision into Results",
     "portfolio.hero.description": "Driving business growth is at the core of what we do at Stable Solutions, guiding you through the modern landscape to broaden your reach and build lasting systems of success.",
+    "partners": {
+        "ourPartners": "Our Partners"
+      },
     "footer": {
         "description": "The <1>one stop shop</1> for all your <1>digital professional needs</1>.",
         "aboutus": "About Us",
