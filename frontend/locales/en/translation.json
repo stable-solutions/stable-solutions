@@ -50,8 +50,12 @@
         "contactus": "Contact Us",
         "meetourteam": "Meet our Team",
         "portfolio": "Portfolio",
+        "alumniFrom": "Powered with education from",
         "copyright": "© {{year}} Stable Solutions LLC. All rights reserved."
-    },
+    }
+ 
+    
+    ,
     "aboutus": {
         "title": "About Us",
         "subtitle": "Meet the Faces of {{company}}: An Orchestra of Software Development",
