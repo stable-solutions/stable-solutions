@@ -6,7 +6,7 @@ import CapabilitiesSection from '../../components/landingPage/CapabilitiesSectio
 
 const AboutUsPage = () => {
     return (
-        <div className="pt-32 bg-pale-blue">
+        <div className="pt-12 md:pt-32 bg-pale-blue">
             <AboutSection />
             <TeamHeader />
             <TeamSection />

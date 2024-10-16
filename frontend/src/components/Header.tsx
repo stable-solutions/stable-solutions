@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               {/* Adjust logo size for mobile */}
               <img src={LogoImage} alt="Stable Solutions" className="h-8 sm:h-7" />
               {/* Logo text only visible on desktop (md and above) */}
-              <span className="hidden md:block text-xl sm:text-2xl font-bold text-dark-blue font-poppins font-extrabold ml-2">
+              <span className="hidden lg:block text-2xl lg:text-2xl sm:text-md font-bold text-dark-blue font-poppins font-extrabold ml-2">
                 <LogoText />
               </span>
             </div>

@@ -15,10 +15,10 @@ const HeroSection: React.FC = () => {
     <div className="relative">
       <div className="relative h-auto md:h-auto pt-2 md:pt-20 pb-20 md:pb-12 flex flex-col items-start justify-center bg-pale-blue text-left overflow-hidden px-6 md:px-12">
         {/* Container for the content */}
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-start w-full mt-12 md:mt-2"> 
+        <div className="relative z-10 w-full xl:max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-start w-full mt-12 md:mt-2"> 
             
           {/* Text Section */}
-          <div className="flex flex-col items-start w-full md:w-[50%] space-y-4 md:space-y-3 pl-0 md:pl-0 md:pr-0 md:ml-40">
+          <div className="flex flex-col items-start w-full md:w-[50%] space-y-4 md:space-y-3 pl-0 md:pl-0 md:pr-0 xl:ml-16">
             <h1 className="text-4xl sm:text-4xl md:text-4xl font-poppins font-extrabold text-dark-blue leading-snug md:leading-normal ">
               {t('landingpage.section1.line1')} <LogoText />
             </h1>
@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
             </p>
 
             {/* Button and Arrow Section */}
-            <div className="w-full flex justify-start md:justify-start items-center mt-8 md:mt-12 ">
+            <div className="w-full flex justify-start md:justify-start items-center mt-8 md:mt-80 md:ml-16">
               {/* Button - added onClick to navigate */}
               <button 
                 onClick={handleContactClick}  // Set button to navigate to contact-us
@@ -40,13 +40,13 @@ const HeroSection: React.FC = () => {
               <img 
                 src="/assets/landingpage/hero-section/arrow-hero.svg" 
                 alt="arrow-hero" 
-                className="hidden md:block ml-4 sm:ml-4 w-24 sm:w-8 md:w-40 h-auto"
+                className="hidden md:block ml-4 md:ml-4 w-24 sm:w-8 md:w-40 h-auto"
               />
             </div>
           </div>
 
           {/* Rocket Image Section */}
-          <div className="flex justify-start items-star w-3/4 mt-8 md:mt-4 md:w-[50%] md:pl-0 md:ml-0 md:mr-44">
+          <div className="flex justify-start items-star w-3/4 mt-8 md:mt-4 md:w-[50%] md:pl-0 md:ml-0 xl:mr-28 md:mb-16">
             <img
               src="/assets/landingpage/hero-section/phonerocketv3-hero.svg"
               alt="rocket-hero"

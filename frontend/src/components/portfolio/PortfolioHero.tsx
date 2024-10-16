@@ -6,18 +6,18 @@ const PortfolioHero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-pale-blue py-12 px-4 sm:px-8 w-full md:w-[90%] mx-auto"> {/* Adjust width and center */}
+    <section className="bg-pale-blue py-12 px-4 sm:px-8 w-full md:max-w-7xl mx-auto"> {/* Adjust width and center */}
       <div className="w-full mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:px-8 lg:px-16 md:mt-20"> {/* Added padding for alignment */}
       
       {/* Left Section - Text Content */}
       <div className="text-left md:w-[55%] space-y-4">
         {/* Results Header */}
-        <h3 className="text-olive-green text-md sm:text-lg md:text-xl font-poppins font-bold">
+        <h3 className="text-olive-green text-md sm:text-lg md:text-xl lg:text-2xl font-poppins font-bold">
           {t('portfolio.hero.title')}
         </h3>
         
         {/* Title */}
-        <h1 className="text-dark-blue text-xl sm:text-2xl md:text-3xl font-poppins font-extrabold leading-tight">
+        <h1 className="text-dark-blue text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-poppins font-extrabold leading-tight">
           {t('portfolio.hero.subtitle')}
         </h1>
 

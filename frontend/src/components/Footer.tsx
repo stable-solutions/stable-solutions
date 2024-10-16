@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Right Section - Three Columns and Alumni Section */}
-                    <div className="flex flex-col w-full md:w-2/3">
+                    <div className="flex flex-col w-full mt-4 md:mt-0 md:w-2/3">
                         {/* Three-Column Links Section */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-center md:text-left h-full mb-0">
                             

@@ -5,10 +5,10 @@ const AboutSection: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (
-		<section className="flex flex-col md:flex-row items-center justify-between mb-24 w-full md:w-[90%] mx-auto bg-pale-blue px-4 md:px-8 lg:px-16">
+		<section className="flex flex-col md:flex-row items-center justify-between mb-24 w-full md:w-full lg:max-w-7xl mx-auto bg-pale-blue px-4 md:px-0 lg:px-16">
 			{/* Text Section */}
 			<div className="flex flex-col items-start w-full space-y-3">
-				<h2 className="text-olive-green text-3xl sm:text-3xl md:text-2xl font-poppins font-extrabold mb-8 md:ml-20">
+				<h2 className="text-olive-green text-2xl sm:text-2xl md:text-2xl font-poppins font-extrabold md:mb-8 md:ml-20">
 					{t('aboutus.title')}
 				</h2>
 				<h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-poppins font-extrabold text-dark-blue leading-snug md:leading-normal md:ml-20">
