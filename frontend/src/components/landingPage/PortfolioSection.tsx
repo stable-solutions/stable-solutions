@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ImageViewer from '../portfolio/ImageViewer.tsx';
 import { portfolioImages } from '../portfolio/portfolioImagesData.ts'; // Import portfolio data
 import { ArrowRight } from 'lucide-react';  // Using an icon from lucide-react
 
 const PortfolioSection: React.FC = () => {
   const navigate = useNavigate();
+
+  // State for selected image index
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   // Function to navigate to the Portfolio page
   const handleViewMoreClick = () => {
@@ -13,6 +17,19 @@ const PortfolioSection: React.FC = () => {
 
   // Get the first 6 images
   const displayedImages = portfolioImages.slice(0, 6);
+
+  // Navigation for ImageViewer
+  const handleNext = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((selectedImageIndex + 1) % displayedImages.length);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((selectedImageIndex - 1 + displayedImages.length) % displayedImages.length);
+    }
+  };
 
   return (
     <section className="bg-olive-green py-12 px-4 sm:px-8 w-full flex flex-col items-center space-y-12">
@@ -25,11 +42,12 @@ const PortfolioSection: React.FC = () => {
 
       {/* Portfolio Grid */}
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-          {displayedImages.map((image) => ( // Removed 'index'
+        <div className={`grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 ${selectedImageIndex !== null ? 'blur-sm' : ''}`}>
+          {displayedImages.map((image, index) => (
             <div
               key={image.shortName}
               className="flex flex-col items-center cursor-pointer transition-transform transform hover:scale-105 relative group"
+              onClick={() => setSelectedImageIndex(index)} // Open ImageViewer
             >
               {/* Image Container */}
               <div className="w-full h-64 md:h-60 lg:h-64 relative overflow-hidden border border-4 border-white rounded-2xl">
@@ -56,6 +74,18 @@ const PortfolioSection: React.FC = () => {
         <span>View More</span> 
         <ArrowRight size={20} />
       </button>
+
+      {/* ImageViewer Component */}
+      {selectedImageIndex !== null && (
+        <ImageViewer
+          src={displayedImages[selectedImageIndex].fullSizeSrc}
+          alt={displayedImages[selectedImageIndex].alt}
+          title={displayedImages[selectedImageIndex].title}
+          onClose={() => setSelectedImageIndex(null)}
+          onNext={handleNext}
+          onPrevious={handlePrevious}
+        />
+      )}
     </section>
   );
 };
