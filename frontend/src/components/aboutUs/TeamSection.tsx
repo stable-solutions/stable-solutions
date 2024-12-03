@@ -11,7 +11,7 @@ const teamMembers = [
   },
   {
     name: 'Malik Byrd',
-    role: 'CSO & Co-founder',
+    role: 'CMO & Co-founder',
     imgSrc: "/assets/aboutus/profiles/malik-aboutus.svg", // Placeholder image
     fhref:'0',
     lhref:'0',
@@ -19,7 +19,7 @@ const teamMembers = [
   },
   {
     name: 'Diya Li',
-    role: 'CTO & Co-founder',
+    role: 'Co-founder',
     imgSrc: "/assets/aboutus/profiles/diya-aboutus.svg", // Placeholder image
     fhref:'0',
     lhref:'0',
