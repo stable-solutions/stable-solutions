@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
           {/* Rocket Image Section */}
           <div className="flex justify-start items-star w-3/4 mt-8 md:mt-4 md:w-[50%] md:pl-0 md:ml-0 xl:mr-28 md:mb-16">
             <img
-              src="/assets/landingpage/hero-section/phonerocketv3-hero.svg"
+              src="/assets/landingpage/hero-section/rocketfounders2-hero.svg"
               alt="rocket-hero"
               className="w-full md:w-full h-auto mx-auto items-start"
             />
