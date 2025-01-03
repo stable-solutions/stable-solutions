@@ -11,11 +11,7 @@ const generateSitemap = () => {
         { loc: '/', changefreq: 'daily', priority: 1.0 },
         { loc: '/about-us', changefreq: 'monthly', priority: 0.8 },
         { loc: '/contact-us', changefreq: 'monthly', priority: 0.8 },
-        { loc: '/careers', changefreq: 'monthly', priority: 0.7 },
         { loc: '/portfolio', changefreq: 'weekly', priority: 0.9 },
-        { loc: '/privacy-policy', changefreq: 'yearly', priority: 0.5 },
-        { loc: '/terms-of-service', changefreq: 'yearly', priority: 0.5 },
-        { loc: '/cookie-policy', changefreq: 'yearly', priority: 0.5 },
     ];
 
     const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
